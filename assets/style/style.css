@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Seymour+One&display=swap');
+/*------------------General------------------*/
+
+.title {
+    font-family: 'Seymour One', sans-serif;
+}
+.instructions {
+    font-family: 'Roboto', sans-serif;
+}
