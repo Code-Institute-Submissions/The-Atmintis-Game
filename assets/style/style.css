@@ -51,6 +51,8 @@ body {
 
 /*------------------Cards------------------*/
 .gameboard {
+    background-color: red;
+    padding: 5%;
     display: grid;
     grid-template-columns: repeat(5,auto);
     grid-gap: 10px;
@@ -60,7 +62,7 @@ body {
 }
 .card {
     background-color: rgb(255, 255, 255);
-    height: 125px;
+    height: 175px;
     width: 125px;
 }
 
