@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ribeye', sans-serif;
+    color: white;
     margin: 0;
     background-color: rgb(17, 0, 255);
 }
