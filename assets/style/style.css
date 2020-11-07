@@ -40,11 +40,10 @@ body {
 /*------------------Cards------------------*/
 .gameboard {
     background-color: rgb(17, 0, 255);
-    padding: 2%;
+    padding-bottom: 2%;
     display: grid;
     grid-template-columns: repeat(5,auto);
     grid-gap: 10px;
-    margin: 20px;
     justify-content: center;
     perspective: 500px;
 
