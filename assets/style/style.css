@@ -46,6 +46,7 @@ body {
     grid-gap: 10px;
     margin: 20px;
     justify-content: center;
+    perspective: 500px;
 
 }
 .cards {
@@ -69,15 +70,16 @@ body {
     border-style: ridge;
     border-color: rgb(255, 193, 5);
     backface-visibility: hidden;
+    transition: transform 700ms ease-in-out;
 }
 
-.cards.show .backofcard {
+.cards:hover .backofcard {  
     transform: rotateY(-180deg);
 
 
 }
 
-.cards.show .frontofcard {
+.cards:hover .frontofcard {
     transform: rotateY(-0deg);
 
 
