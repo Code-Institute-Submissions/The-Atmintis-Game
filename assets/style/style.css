@@ -68,16 +68,33 @@ body {
     border-width: 5px;
     border-style: ridge;
     border-color: rgb(255, 193, 5);
+    backface-visibility: hidden;
+}
+
+.cards.show .backofcard {
+    transform: rotateY(-180deg);
+
+
+}
+
+.cards.show .frontofcard {
+    transform: rotateY(-0deg);
+
+
 }
 
 .backofcard {
         background-color: rgb(255, 255, 255);
         border-color: rgb(255, 193, 5);
+        transform: rotateY(0);
 
 }
 
 .frontofcard {
-    transform: rotateX(180deg);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 193, 5);
+    transform: rotateY(180deg);
+
 }
 
 .Backimage {
