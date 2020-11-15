@@ -27,7 +27,6 @@ body {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -37,7 +36,21 @@ body {
     font-size: 300%;
     
 }
-
+.popover-title {
+    color: black;
+    font-family: 'Ribeye', sans-serif;
+    
+    
+}
+.popover-content {
+    color: black;
+    font-family: 'Ribeye', sans-serif;
+    
+    
+}
+.fade:not(.show) {
+    opacity: 100;
+}
 
 /*------------------Cards------------------*/
 .gameboard {
@@ -174,6 +187,5 @@ position: absolute;
   .gameboard {
     grid-template-columns: repeat(1, auto)
   }
-
 
 
