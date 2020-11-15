@@ -27,6 +27,8 @@ body {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gameinfo {
@@ -48,10 +50,12 @@ body {
     perspective: 500px;
 
 }
-.cards {
+.card {
     position: relative;
     height: 175px;
     width: 250px;
+    background-color: rgb(17, 0, 255);
+    border: none;
     
 }
 
@@ -72,13 +76,13 @@ body {
     transition: transform 700ms ease-in-out;
 }
 
-.cards:hover .backofcard {  
+.card:hover .backofcard {  
     transform: rotateY(-180deg);
 
 
 }
 
-.cards:hover .frontofcard {
+.card:hover .frontofcard {
     transform: rotateY(-0deg);
 
 
@@ -158,31 +162,18 @@ position: absolute;
     grid-template-columns: repeat(3, auto)
   }
 
-  .info {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 @media (max-width: 800px) {
   .gameboard {
     grid-template-columns: repeat(2, auto)
   }
 
-  .info {
-    flex-direction: column;
-    align-items: center;
-  }
+
 }
 @media (max-width: 530px) {
   .gameboard {
     grid-template-columns: repeat(1, auto)
   }
 
-  .info {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 

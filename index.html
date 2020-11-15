@@ -1,226 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-     <link rel="stylesheet" href="assets/style/style.css">
-     <title>The Atmintis Game</title>
-</head>
-<body>  
-<!--NAV BAR -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <a class="navbar-brand" href="#">Atmintis Game</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      <li class="nav-item">
-                     <a href="developer.html" class="nav-link">Contact Developer</a>
-                  </li>
-    </ul>
-  </div>
-</nav>
-
-<!--Learn -->
-    <div class="col border-top">
-    <h1 class="title text-center mt-3">The Atmintis Game</h1>
-    </div>
-    <div class="container instructions mt-2">
-        <h4 class="text-center"> Learn to count in Lithuanian.</h4>
-           <div class="container">
-  <div class="row">
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Vienas</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Du</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Trys</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Keturi</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Penki</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Šeši</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Septyni</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Aštuoni</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Devyni</button>
-   <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Dešimt</button>
-   
-    </div>
-    <h5 class="text-center"> Match the English number card with the Lithuanian number card. Watch out for the timer!</h5>
-  </div>
-</div>
-
- <!--Game Info -->
-    <div class="gameboard"> 
-        <div class="info"> 
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+      <link rel="stylesheet" href="assets/style/style.css">
+      <title>The Atmintis Game</title>
+   </head>
+   <body>
+      <!--NAV BAR -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+         <a class="navbar-brand" href="#">Atmintis Game</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+               <li class="nav-item">
+                  <a href="developer.html" class="nav-link">Contact Developer</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!--Learn -->
+      <div class="col border-top">
+         <h1 class="title text-center mt-3">The Atmintis Game</h1>
+      </div>
+      <div class="container instructions mt-2">
+         <h4 class="text-center"> Learn to count in Lithuanian.</h4>
+         <div class="container">
+            <div class="row">
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Vienas</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Du</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Trys</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Keturi</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Penki</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Šeši</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Septyni</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Aštuoni</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Devyni</button>
+               <button type="button" class="btn btn-warning btn-lg mr-2 mb-2 mt-2">Dešimt</button>
+            </div>
+            <h5 class="text-center"> Match the English number card with the Lithuanian number card. Watch out for the timer!</h5>
+         </div>
+      </div>
+      <!--Game Info -->
+      <div class="gameboard">
+         <div class="info">
             <div class="gameinfo">
-                Time <span id="time-left">120</span>
+               Time <span id="time-left">120</span>
             </div>
             <div class="gameinfo">
-                Turns <span id="turns">0</span>
+               Turns <span id="turns">0</span>
             </div>
-        </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L1.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E1.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L2.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E2.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L3.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E3.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L4.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E4.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L5.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E5.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L6.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E6.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L7.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E7.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L8.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E8.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L9.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E9.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/L10.png" alt="number 1">
-        </div>
-    </div>
-    <div class="cards">
-        <div class="backofcard face">
-            <img class="backimage" src="images/backofcard.png" alt="back of card">
-        </div>
-        <div class="frontofcard face">
-            <img class="frontimage" src="images/E10.png" alt="number 1">
-        </div>
-    </div>
-    </div>    
-</body>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L1.png" alt="number 1">
+               <div class="value" id="one"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E1.png" alt="number 1">
+               <div class="value" id="one"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L2.png" alt="number 1">
+               <div class="value" id="two"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E2.png" alt="number 1">
+               <div class="value" id="two"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L3.png" alt="number 1">
+               <div class="value" id="three"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E3.png" alt="number 1">
+               <div class="value" id="three"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L4.png" alt="number 1">
+               <div class="value" id="four"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E4.png" alt="number 1">
+               <div class="value" id="four"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L5.png" alt="number 1">
+               <div class="value" id="five"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E5.png" alt="number 1">
+               <div class="value" id="five"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L6.png" alt="number 1">
+               <div class="value" id="six"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E6.png" alt="number 1">
+               <div class="value" id="six"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L7.png" alt="number 1">
+               <div class="value" id="seven"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E7.png" alt="number 1">
+               <div class="value" id="seven"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L8.png" alt="number 1">
+               <div class="value" id="eight"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E8.png" alt="number 1">
+               <div class="value" id="eight"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L9.png" alt="number 1">
+               <div class="value" id="nine"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E9.png" alt="number 1">
+               <div class="value" id="nine"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/L10.png" alt="number 1">
+               <div class="value" id="Ten"></div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="backofcard face">
+               <img class="backimage" src="images/backofcard.png" alt="back of card">
+            </div>
+            <div class="frontofcard face">
+               <img class="frontimage" src="images/E10.png" alt="number 1">
+               <div class="value" id="ten"></div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
