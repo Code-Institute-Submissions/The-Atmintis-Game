@@ -14,3 +14,17 @@ if (document.readyState == 'loading') {
 }
 
 // message screen for start game, game over and card functions, need to add the divs.
+function ready() {
+    let overlays = Array.from(document.getElementsByClassName('gametext'));
+    let cards = Array.from(document.getElementsByClassName('card'));
+    
+
+    overlays.forEach(overlay => {
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('show');
+            
+        });
+    });
+
+}
+
