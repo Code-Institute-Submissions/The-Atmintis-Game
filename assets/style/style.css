@@ -52,6 +52,45 @@ body {
     opacity: 100;
 }
 
+/*------------------Game Text------------------*/
+
+.gametext {
+
+position: fixed;
+top: 0;
+bottom: 0;
+right:0;
+left:0;
+justify-content: center;
+align-items: center;
+z-index: 100;
+display: none;
+
+}
+
+.gametext.show {
+    display: flex;
+    animation: overlay-grow 700ms forwards;
+    flex-direction: column;
+    }
+
+.gamemessage {
+    font-size: 70%;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgb(59, 60, 82)
+        font-size: 0;
+    }
+    to {
+         background-color: rgb(59, 60, 82, .8);
+         font-size: 300%;
+         
+         
+    }
+}
+
 /*------------------Cards------------------*/
 .gameboard {
     background-color: rgb(17, 0, 255);

@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="assets/style/style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <script src="assets/javascript/game.js"></script>
+      <script src="assets/javascript/game.js" async></script>
       <title>The Atmintis Game</title>
    </head>
    <body>
@@ -29,11 +29,12 @@
             </ul>
          </div>
       </nav>
+
       <!--Learn -->
       <div class="col border-top">
          <h1 class="title text-center mt-3">The Atmintis Game</h1>
       </div>
-      <div class="container instructions mt-2">
+      <div class="justify-content-center instructions mt-2">
          <h4 class="text-center"> Learn to count in Lithuanian, hover over the numbers below</h4>
          <div class="container">
             <div class="row">
@@ -53,7 +54,20 @@
          </div>
       </div>
       <!--Game Info -->
+    
+    
       <div class="gameboard">
+       <div class="gametext show">
+    Click to Start
+  </div>
+  <div id="gomessage" class="gametext">
+    GAME OVER
+    <span class="gamemessage">Click to try again</span>
+  </div>
+  <div id="winnermessage" class="gametext">
+    Congratulations, you did it!
+    <span class="gamemessage">Click to try again</span>
+</div>
          <div class="info">
             <div class="gameinfo">
                Time <span id="time-left">120</span>
@@ -242,7 +256,7 @@
                <div class="value" id="ten"></div>
             </div>
          </div>
-      </div>
+      
       <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
