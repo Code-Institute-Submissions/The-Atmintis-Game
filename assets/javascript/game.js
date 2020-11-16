@@ -25,6 +25,9 @@ function ready() {
             
         });
     });
-
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+        });
+    });
 }
 
