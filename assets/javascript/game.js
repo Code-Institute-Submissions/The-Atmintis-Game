@@ -69,6 +69,7 @@ class Atmintis {
             this.audioController.turn();
             this.totalTurns++;
             this.noTurn.innerText = this.totalTurns;
+            card.classList.add("show");
     }
 }
     canTurnCard(card) {
