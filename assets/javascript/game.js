@@ -51,13 +51,13 @@ class Atmintis {
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
         this.timer = document.getElementById('time-left')
-        this.ticker = document.getElementById('turns');
+        this.noTurn = document.getElementById('turns');
         this.audioController = new AudioController();
     }
 
     startGame() {
         this.cardToCheck = null;
-        this.totalClicks = 0;
+        this.totalTurns = 0;
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
@@ -67,6 +67,8 @@ class Atmintis {
      turnCard(card) {
         if(this.canTurnCard(card)) {
             this.audioController.turn();
+            this.totalTurns++;
+            this.noTurn.innerText = this.totalTurns;
     }
 }
     canTurnCard(card) {
