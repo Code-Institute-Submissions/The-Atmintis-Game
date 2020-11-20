@@ -128,13 +128,13 @@ display: none;
     transition: transform 700ms ease-in-out;
 }
 
-.card:hover .backofcard {  
+.card.show .backofcard {  
     transform: rotateY(-180deg);
 
 
 }
 
-.card:hover .frontofcard {
+.card.show .frontofcard {
     transform: rotateY(-0deg);
 
 
