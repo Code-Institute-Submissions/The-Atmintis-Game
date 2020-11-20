@@ -61,7 +61,22 @@ class Atmintis {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
-        
+
+        setTimeout(() =>{ // this will help the game run smoother when you hit game over or winner
+            this.audioController.startMusic();
+            this.shufflePack();
+            this.countdown = this.startTimer();
+            this.busy = false;
+        }, 500);
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.noTurn.innerText = this.totalTurns;
+    }
+    hideCards() {
+        this.cardsArray.forEach(card => {
+            card.classList.remove('show');
+        });//look at cards array and remove show class
+
     }
 
      turnCard(card) {
@@ -70,8 +85,35 @@ class Atmintis {
             this.totalTurns++;
             this.noTurn.innerText = this.totalTurns;
             card.classList.add("show");
+
     }
 }
+startTimer() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();
+        }, 1100);
+    }
+    
+gameOver(){
+    clearInterval(this.countdown);
+    this.audioController.gameOver();
+    document.getElementById("gomessage").classList.add("show");
+    
+}
+ // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle and web dev simplified hellped me to undersatand how to write in javascript
+
+ shufflePack() {
+     for(let i = this.cardsArray.length - 1; i > 0; i--) {
+         let randomIndex = Math.floor(Math.random() * (i+1));
+         this.cardsArray[randomIndex].style.order = i;
+         this.cardsArray[i].style.order = randomIndex;
+     }
+ }
+
+
     canTurnCard(card) {
         return true;
     }
@@ -82,7 +124,7 @@ class Atmintis {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('gametext'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new Atmintis(120, cards);
+    let game = new Atmintis(110, cards);
     
 
     overlays.forEach(overlay => {
