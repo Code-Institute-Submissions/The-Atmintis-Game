@@ -35,8 +35,8 @@ class AudioController {
         this.pairSound.play();
         // play language sound this.language.play
     }
-    victory() {
-        this.stopMusic(); // when we win we need to stop countdown
+    winner() {
+        this.stopMusic(); // when player wins we need to stop countdown
         this.winnerSound.play();
     }
     gameOver() {
@@ -68,11 +68,11 @@ class Atmintis {
             this.countdown = this.startTimer();
             this.busy = false;
         }, 500);
-        this.hideCards();
+        this.doNotShowCards();
         this.timer.innerText = this.timeRemaining;
         this.noTurn.innerText = this.totalTurns;
     }
-    hideCards() {
+    doNotShowCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('show');
         });//look at cards array and remove show class
@@ -85,9 +85,48 @@ class Atmintis {
             this.totalTurns++;
             this.noTurn.innerText = this.totalTurns;
             card.classList.add("show");
+// are we matching or turning a card for the first time
+            if(this.cardToCheck)
+            this.checkMatch(card);
+            else
+                this.cardToCheck = card;
 
     }
 }
+
+checkMatch (card){
+    if(this.getCardValue(card) === this.getCardValue(this.cardToCheck))
+    this.cardPair(card, this.cardToCheck);
+    else
+        this.cardNotMatch(card, this.cardToCheck);
+
+        this.cardToCheck = null;
+}
+
+cardPair (card1, card2) {
+    this.matchedCards.push(card1);
+    this.matchedCards.push(card2);
+    this.audioController.match();
+    if(this.matchedCards.length === this.cardsArray.length);
+       this.winner();
+
+}
+
+cardNotMatch(card1, card2) {
+    this.busy = true;
+    setTimeout (() => {
+        card1.classList.remove("show");
+        card2.classList.remove("show");
+        this.busy = false;
+    },1000);
+
+}
+
+getCardValue (card) {
+    return card.getElementsByClassName("value")[0].src;
+
+}
+
 startTimer() {
         return setInterval(() => {
             this.timeRemaining--;
@@ -103,6 +142,12 @@ gameOver(){
     document.getElementById("gomessage").classList.add("show");
     
 }
+winner(){
+    clearInterval(this.countdown);
+    this.audioController.winner();
+    document.getElementById("winnermessage").classList.add("show");
+    
+}
  // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle and web dev simplified hellped me to undersatand how to write in javascript
 
  shufflePack() {
@@ -115,7 +160,7 @@ gameOver(){
 
 
     canTurnCard(card) {
-        return true;
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
