@@ -75,7 +75,7 @@ class Atmintis {
     doNotShowCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('show');
-        });//look at cards array and remove show class
+        });//looking at cards array and remove show class
 
     }
 
@@ -85,7 +85,7 @@ class Atmintis {
             this.totalTurns++;
             this.noTurn.innerText = this.totalTurns;
             card.classList.add("show");
-// are we matching or turning a card for the first time
+// Looking at a match or turning a card for the first time
             if(this.cardToCheck)
             this.checkMatch(card);
             else
@@ -107,7 +107,7 @@ cardPair (card1, card2) {
     this.matchedCards.push(card1);
     this.matchedCards.push(card2);
     this.audioController.match();
-    if(this.matchedCards.length === this.cardsArray.length);
+    if(this.matchedCards.length === this.cardsArray.length)
        this.winner();
 
 }
