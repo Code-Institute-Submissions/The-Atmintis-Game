@@ -6,9 +6,16 @@
 
 body {
     font-family: 'Ribeye', sans-serif;
-    color: white;
     margin: 0;
     background-color: rgb(17, 0, 255);
+}
+
+h4, h5 {
+    color: white;
+}
+
+div {
+    color: white;
 }
 
 
@@ -36,6 +43,7 @@ body {
     font-size: 300%;
     
 }
+
 .popover-title {
     color: black;
     font-family: 'Ribeye', sans-serif;
