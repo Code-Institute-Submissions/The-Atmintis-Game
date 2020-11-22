@@ -14,9 +14,6 @@ h4, h5 {
     color: white;
 }
 
-div {
-    color: white;
-}
 
 
 /*------------------title------------------*/
@@ -101,6 +98,7 @@ display: none;
 
 /*------------------Cards------------------*/
 .gameboard {
+    color: white;
     background-color: rgb(17, 0, 255);
     padding-bottom: 2%;
     display: grid;
