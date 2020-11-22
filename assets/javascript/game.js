@@ -170,7 +170,7 @@ winner(){
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('gametext'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new Atmintis(110, cards);
+    let game = new Atmintis(10, cards);
     
 
     overlays.forEach(overlay => {
