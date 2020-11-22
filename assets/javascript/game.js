@@ -16,9 +16,10 @@ class AudioController {
         this.winnerSound = new Audio('assets/audio/winner.mp3');
         this.gameOverSound = new Audio('assets/audio/gameover.mp3');
         // and language sound later
-        this.countdownSound.volume = 0.1;
+        this.countdownSound.volume = 0.5;
         this.countdownSound.loop = true;
-        this.turnSound.volume = 0.9
+        this.turnSound.volume = 0.5
+        this.winnerSound.volume = 0.5;
     }
     startMusic() {
         this.countdownSound.play();
