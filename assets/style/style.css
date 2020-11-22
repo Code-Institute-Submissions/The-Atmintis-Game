@@ -140,9 +140,11 @@ display: none;
 
 }
 
-.card.matched .frontofcard .value {
-    animation: dance 1s linear infinite 500ms; 
+.value {
+visibility: hidden;
 }
+
+
 
 .backofcard {
         background-color: rgb(255, 255, 255);
