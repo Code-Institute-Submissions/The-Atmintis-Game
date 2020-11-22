@@ -146,6 +146,7 @@ winner(){
     clearInterval(this.countdown);
     this.audioController.winner();
     document.getElementById("winnermessage").classList.add("show");
+    this.doNotShowCards();
     
 }
  // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle and web dev simplified hellped me to undersatand how to write in javascript
