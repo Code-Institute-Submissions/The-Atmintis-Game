@@ -49,10 +49,10 @@
                     <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control mb-2" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control mb-2" placeholder="Project description" required></textarea>
+                        <textarea rows="15" name="projectsummary" id="projectsummary" class="form-control mb-2" placeholder="Project description" required></textarea>
                         <div class="form-row text-center mb-3">
                             <div class="col">
-                                <button type="submit" class="btn btn-warning">Send Project Request</button>
+                                <button type="submit" class="btn btn-warning border border-light ">Send Project Request</button>
                             </div>
                         </div>
                     </form>
@@ -60,8 +60,50 @@
 
             </div>
         </div>
-
     </section>
+    <!-- FOOTER -->
+           <footer class="bg-warning text-dark border border-light">
+         <div class="text-center">
+            <div>
+               <h4 class="Socialfoot text-dark pt-2">Social Media</h4>
+               <ul class="list-inline social-links">
+                  <li class="list-inline-item">
+                     <a target="_blank" rel="noopener" href="https://en-gb.facebook.com/login/">
+                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                     <span class="sr-only">Facebook</span>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" rel="noopener" href="https://twitter.com/login?lang=en">
+                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                     <span class="sr-only">Twitter</span>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" rel="noopener" href="https://www.pinterest.co.uk/login/">
+                     <i class="fa fa-pinterest" aria-hidden="true"></i>
+                     <span class="sr-only">Pinterest</span>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" rel="noopener" href="https://www.instagram.com/accounts/login/?hl=en">
+                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                     <span class="sr-only">Instagram</span>
+                     </a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" rel="noopener" href="https://www.youtube.com/">
+                     <i class="fa fa-youtube" aria-hidden="true"></i>
+                     <span class="sr-only">YouTube</span>
+                     </a>
+                  </li>
+                  <li>
+                  <p class="mb-4 pt-4 pb-2">Copyright &#169; 2020 Lee Farmer</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
 <script src="assets/javascript/sendEmail.js"></script>
    </body>
 </html>
