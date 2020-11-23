@@ -81,7 +81,7 @@ A fun way to teach their children and themselves another language, as well as tr
 Colour and font were taken into account in order to make the interface eye catching for children, but also incorporated best practices in terms of accessibility, in order to cater for users of all learning abilities. 
 ### Images
 I designed all the images myself using a free image website: https://www.shutterstock.com/, I then copied and designed these on a word doc, converting to PNG files. I would in future source this out or take a design course. 
-Ther images had to be friendly and fun.
+The images had to be friendly and fun.
 ### Sound
 I downloaded my sounds from: https://www.zapsplat.com/. I selected the sound for children, helping the game to be fun adnd happy
 - - - -
@@ -148,12 +148,9 @@ On this page you have a section for any parent that wishes to exspand the game o
 
 ### Features Left to Implement
 
-* I want to continue to build out other leaning subjects, such as days of the week, colours and phrases. This game will continue to grow and is adabtable to include other languages 
-
+* Counting is the first of this game’s features. Further features to implement include learning letters of the alphabet, colours, and animals. 
 * The learning section will be a signle page with picture and animations against the numbers, once the user is ready then will then be passed to 'The Antmintis Game'
-
 * I have uploaded single numbers to the gamne that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunatly the images are poor and i would rather have a designer develop them. For now i used the images and the scource as the identifier for the match.
-
 * I want to add a click function to the numbers under the learn section. On Click you will have a voice speaking the number in Lithuanian, this will help the end user pronounce the words correctly.
 
 
@@ -176,6 +173,7 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 * Pooper for the pop over function on my numbers
 [Pooper] (https://popper.js.org/)
+
 [Google Fonts](https://fonts.google.com/) - added in CSS
 
 [Balsamiq](https://balsamiq.com/) - used for wireframes
@@ -184,7 +182,7 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 [Free image site](https://www.shutterstock.com/,) - used with Microsoft word to build images.
 
-[Free Sound downloading](https://www.zapsplat.com/)
+[Free Sound downloading](https://www.zapsplat.com/) - used for all sound effects.
 
 
 
