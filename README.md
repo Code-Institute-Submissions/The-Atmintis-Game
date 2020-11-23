@@ -37,6 +37,7 @@ The game features cards on a board that users need to match the English number t
 
 The game is for children (and their parents) who would like to learn to count in Lithuanian or English. The easy to use interface features timers, graphics and sounds that make learning fun, encouraging repetition which will aid retention of the concepts. 
 
+The game is designed to be played on a computer, not mobile devices. The screen is responsive (mobile first) but the user exsperience needs a larger screen.
 
 
 *Who are the users - in order*

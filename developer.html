@@ -10,7 +10,15 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="assets/javascript/game.js" async></script>
-      <title>The Atmintis Game</title>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_6GKFikypXCV2gZX8Lhym5");
+        })();
+</script>
+<title>The Atmintis Game</title>
    </head>
    <body>
         <header>
@@ -38,7 +46,7 @@
                 <h3 class="contact-heading uppercase text-light text-center mt-4">Please contact me if you would like other subjects or languages.</h3>
 
                 <div class="center-form mt-2">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control mb-2" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required />
                         <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control mb-2" placeholder="Project description" required></textarea>
@@ -54,6 +62,6 @@
         </div>
 
     </section>
-
+<script src="assets/javascript/sendEmail.js"></script>
    </body>
 </html>
