@@ -8,21 +8,20 @@
       <link rel="stylesheet" href="assets/style/style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="assets/javascript/game.js" async></script>
       <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_6GKFikypXCV2gZX8Lhym5");
-        })();
-</script>
-<title>The Atmintis Game</title>
+         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init("user_6GKFikypXCV2gZX8Lhym5");
+              })();
+      </script>
+      <title>The Atmintis Game</title>
    </head>
    <body>
-        <header>
-       <!--NAV BAR -->
+      <header>
+         <!--NAV BAR -->
          <nav class="navbar navbar-expand-sm navbar-light bg-warning">
             <a href="index.html" class="navbar-brand">Atmintis Game</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" title="hamberger">Menu
@@ -39,30 +38,28 @@
                </ul>
             </div>
          </nav>
-</header>
-     <section class="container">
-        <div class="row bg-color-contact">
+      </header>
+      <section class="container">
+         <div class="row bg-color-contact">
             <div class="col">
-                <h3 class="contact-heading uppercase text-light text-center mt-4">Please contact me if you would like other subjects or languages.</h3>
-
-                <div class="center-form mt-2">
-                    <form onsubmit="return sendMail(this);">
-                        <input type="text" name="name" id="fullname" class="form-control mb-2" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required />
-                        <textarea rows="15" name="projectsummary" id="projectsummary" class="form-control mb-2" placeholder="Project description" required></textarea>
-                        <div class="form-row text-center mb-3">
-                            <div class="col">
-                                <button type="submit" class="btn btn-warning border border-light ">Send Project Request</button>
-                            </div>
+               <h3 class="contact-heading uppercase text-light text-center mt-4">Please contact me if you would like other subjects or languages.</h3>
+               <div class="center-form mt-2">
+                  <form onsubmit="return sendMail(this);">
+                     <input type="text" name="name" id="fullname" class="form-control mb-2" placeholder="Name" required />
+                     <input type="email" name="email" id="emailaddress" class="form-control mb-2" placeholder="Email" required />
+                     <textarea rows="15" name="projectsummary" id="projectsummary" class="form-control mb-2" placeholder="Project description" required></textarea>
+                     <div class="form-row text-center mb-3">
+                        <div class="col">
+                           <button type="submit" class="btn btn-warning border border-light ">Send Project Request</button>
                         </div>
-                    </form>
-                </div>
-
+                     </div>
+                  </form>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- FOOTER -->
-           <footer class="bg-warning text-dark border border-light">
+         </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="bg-warning text-dark border border-light">
          <div class="text-center">
             <div>
                <h4 class="Socialfoot text-dark pt-2">Social Media</h4>
@@ -98,12 +95,12 @@
                      </a>
                   </li>
                   <li>
-                  <p class="mb-4 pt-4 pb-2">Copyright &#169; 2020 Lee Farmer</p>
+                     <p class="mb-4 pt-4 pb-2">Copyright &#169; 2020 Lee Farmer</p>
                   </li>
                </ul>
             </div>
          </div>
       </footer>
-<script src="assets/javascript/sendEmail.js"></script>
+      <script src="assets/javascript/sendEmail.js"></script>
    </body>
 </html>

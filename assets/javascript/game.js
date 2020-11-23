@@ -1,8 +1,8 @@
-$(function () {
-  $('[data-toggle="popover"]').popover({
-      placement : 'top',
-      trigger : 'hover'
-  })
+$(function() {
+    $('[data-toggle="popover"]').popover({
+        placement: 'top',
+        trigger: 'hover'
+    })
 })
 
 
@@ -30,7 +30,7 @@ class AudioController {
     }
     turn() {
         this.turnSound.play();
-         
+
     }
     match() {
         this.pairSound.play();
@@ -63,7 +63,7 @@ class Atmintis {
         this.matchedCards = [];
         this.busy = true;
 
-        setTimeout(() =>{ // this will help the game run smoother when you hit game over or winner
+        setTimeout(() => { // this will help the game run smoother when you hit game over or winner
             this.audioController.startMusic();
             this.shufflePack();
             this.countdown = this.startTimer();
@@ -76,89 +76,89 @@ class Atmintis {
     doNotShowCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('show');
-        });//looking at cards array and remove show class
+        }); //looking at cards array and remove show class
 
     }
 
-     turnCard(card) {
-        if(this.canTurnCard(card)) {
+    turnCard(card) {
+        if (this.canTurnCard(card)) {
             this.audioController.turn();
             this.totalTurns++;
             this.noTurn.innerText = this.totalTurns;
             card.classList.add("show");
-// Looking at a match or turning a card for the first time
-            if(this.cardToCheck)
-            this.checkMatch(card);
+            // Looking at a match or turning a card for the first time
+            if (this.cardToCheck)
+                this.checkMatch(card);
             else
                 this.cardToCheck = card;
 
+        }
     }
-}
 
-checkMatch (card){
-    if(this.getCardValue(card) === this.getCardValue(this.cardToCheck))
-    this.cardPair(card, this.cardToCheck);
-    else
-        this.cardNotMatch(card, this.cardToCheck);
+    checkMatch(card) {
+        if (this.getCardValue(card) === this.getCardValue(this.cardToCheck))
+            this.cardPair(card, this.cardToCheck);
+        else
+            this.cardNotMatch(card, this.cardToCheck);
 
         this.cardToCheck = null;
-}
+    }
 
-cardPair (card1, card2) {
-    this.matchedCards.push(card1);
-    this.matchedCards.push(card2);
-    this.audioController.match();
-    if(this.matchedCards.length === this.cardsArray.length)
-       this.winner();
+    cardPair(card1, card2) {
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        this.audioController.match();
+        if (this.matchedCards.length === this.cardsArray.length)
+            this.winner();
 
-}
+    }
 
-cardNotMatch(card1, card2) {
-    this.busy = true;
-    setTimeout (() => {
-        card1.classList.remove("show");
-        card2.classList.remove("show");
-        this.busy = false;
-    },1000);
+    cardNotMatch(card1, card2) {
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove("show");
+            card2.classList.remove("show");
+            this.busy = false;
+        }, 1000);
 
-}
+    }
 
-getCardValue (card) {
-    return card.getElementsByClassName("value")[0].src;
+    getCardValue(card) {
+        return card.getElementsByClassName("value")[0].src;
 
-}
+    }
 
-startTimer() {
+    startTimer() {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 0)
+            if (this.timeRemaining === 0)
                 this.gameOver();
         }, 1100);
     }
-    
-gameOver(){
-    clearInterval(this.countdown);
-    this.audioController.gameOver();
-    document.getElementById("gomessage").classList.add("show");
-    
-}
-winner(){
-    clearInterval(this.countdown);
-    this.audioController.winner();
-    document.getElementById("winnermessage").classList.add("show");
-    this.doNotShowCards();
-    
-}
- // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle and web dev simplified hellped me to undersatand how to write in javascript
 
- shufflePack() {
-     for(let i = this.cardsArray.length - 1; i > 0; i--) {
-         let randomIndex = Math.floor(Math.random() * (i+1));
-         this.cardsArray[randomIndex].style.order = i;
-         this.cardsArray[i].style.order = randomIndex;
-     }
- }
+    gameOver() {
+        clearInterval(this.countdown);
+        this.audioController.gameOver();
+        document.getElementById("gomessage").classList.add("show");
+
+    }
+    winner() {
+        clearInterval(this.countdown);
+        this.audioController.winner();
+        document.getElementById("winnermessage").classList.add("show");
+        this.doNotShowCards();
+
+    }
+    // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle and web dev simplified hellped me to undersatand how to write in javascript
+
+    shufflePack() {
+        for (let i = this.cardsArray.length - 1; i > 0; i--) {
+            let randomIndex = Math.floor(Math.random() * (i + 1));
+            this.cardsArray[randomIndex].style.order = i;
+            this.cardsArray[i].style.order = randomIndex;
+        }
+    }
 
 
     canTurnCard(card) {
@@ -172,13 +172,13 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('gametext'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new Atmintis(110, cards);
-    
+
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('show');
             game.startGame();
-            
+
         });
     });
     cards.forEach(card => {
@@ -190,7 +190,7 @@ function ready() {
 
 // see webdevsimplified as their documentation helped
 
-if (document.readyState == 'loading') { 
+if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready); // if loading wait until it loads and call ready
 } else {
     ready();

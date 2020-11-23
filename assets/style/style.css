@@ -1,249 +1,275 @@
 @import url('https://fonts.googleapis.com/css2?family=Ribeye&family=Roboto&display=swap');
 
 /*------------------General------------------*/
+
 * {
-    box-sizing: border-box; /*Helps with sizing the eliments*/
+	box-sizing: border-box;
+	/*Helps with sizing the eliments*/
 }
 
 body {
-    font-family: 'Ribeye', sans-serif;
-    margin: 0;
-    background-color: rgb(17, 0, 255);
+	font-family: 'Ribeye', sans-serif;
+	margin: 0;
+	background-color: rgb(17, 0, 255);
 }
 
-h4, h5 {
-    color: white;
+h4,
+h5 {
+	color: white;
 }
-
 
 
 /*------------------title------------------*/
+
 .title {
-    font-family: 'Ribeye', sans-serif;
-    color: #ffffff;
-    font-size: 400%;
-    
+	font-family: 'Ribeye', sans-serif;
+	color: #ffffff;
+	font-size: 400%;
 }
 
 
 /*------------------Counter and Turns------------------*/
 
 .info {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	grid-column: 1 / -1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .gameinfo {
-    font-family: 'Ribeye', sans-serif;
-    color: #ffffff;
-    font-size: 300%;
-    
+	font-family: 'Ribeye', sans-serif;
+	color: #ffffff;
+	font-size: 300%;
 }
 
 .popover-title {
-    color: black;
-    font-family: 'Ribeye', sans-serif;
-    
-    
+	color: black;
+	font-family: 'Ribeye', sans-serif;
 }
+
 .popover-content {
-    color: black;
-    font-family: 'Ribeye', sans-serif;
-    
-    
+	color: black;
+	font-family: 'Ribeye', sans-serif;
 }
+
 .fade:not(.show) {
-    opacity: 10;
+	opacity: 10;
 }
+
 
 /*------------------Game Text------------------*/
 
 .gametext {
-
-position: fixed;
-top: 0;
-bottom: 0;
-right:0;
-left:0;
-justify-content: center;
-align-items: center;
-z-index: 100;
-display: none;
-
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	display: none;
 }
 
 .gametext.show {
-    display: flex;
-    animation: overlay-grow 700ms forwards;
-    flex-direction: column;
-    }
+	display: flex;
+	animation: overlay-grow 700ms forwards;
+	flex-direction: column;
+}
 
 .gamemessage {
-    font-size: 70%;
+	font-size: 70%;
 }
 
 @keyframes overlay-grow {
-    from {
-        background-color: rgb(59, 60, 82);
-        font-size: 0;
-    }
-    to {
-         background-color: rgb(59, 60, 82, .8);
-         font-size: 300%;
-         
-         
-    }
+	from {
+		background-color: rgb(59, 60, 82);
+		font-size: 0;
+	}
+	to {
+		background-color: rgb(59, 60, 82, .8);
+		font-size: 300%;
+	}
 }
+
 
 /*------------------Cards------------------*/
-.gameboard {
-    color: white;
-    background-color: rgb(17, 0, 255);
-    padding-bottom: 2%;
-    display: grid;
-    grid-template-columns: repeat(5,auto);
-    grid-gap: 10px;
-    justify-content: center;
-    perspective: 500px;
 
+.gameboard {
+	color: white;
+	background-color: rgb(17, 0, 255);
+	padding-bottom: 2%;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-gap: 10px;
+	justify-content: center;
+	perspective: 500px;
 }
+
 .card {
-    position: relative;
-    height: 175px;
-    width: 250px;
-    background-color: rgb(17, 0, 255);
-    border: none;
-    
+	position: relative;
+	height: 175px;
+	width: 250px;
+	background-color: rgb(17, 0, 255);
+	border: none;
 }
 
 .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;  
-    backface-visibility: hidden;
-    border-radius: 15px;
-    border-width: 5px;
-    border-style: ridge;
-    border-color: rgb(255, 193, 5);
-    backface-visibility: hidden;
-    transition: transform 700ms ease-in-out;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	backface-visibility: hidden;
+	border-radius: 15px;
+	border-width: 5px;
+	border-style: ridge;
+	border-color: rgb(255, 193, 5);
+	backface-visibility: hidden;
+	transition: transform 700ms ease-in-out;
 }
 
-.card.show .backofcard {  
-    transform: rotateY(-180deg);
-
-
+.card.show .backofcard {
+	transform: rotateY(-180deg);
 }
 
 .card.show .frontofcard {
-    transform: rotateY(-0deg);
-
-
+	transform: rotateY(-0deg);
 }
 
 .value {
-visibility: hidden;
+	visibility: hidden;
 }
 
-
-
 .backofcard {
-        background-color: rgb(255, 255, 255);
-        border-color: rgb(255, 193, 5);
-        transform: rotateY(0);
-
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 193, 5);
+	transform: rotateY(0);
 }
 
 .frontofcard {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(255, 193, 5);
-    transform: rotateY(180deg);
-
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 193, 5);
+	transform: rotateY(180deg);
 }
 
 .frontimage {
-position: absolute;
-    width: 100%;
-    height: 100%;
-
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .frontimage:hover {
-  animation: shake 1.5s;
-  animation-iteration-count: infinite;
+	animation: shake 1.5s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
 }
-
 
 .backimage {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
-
 .backimage:hover {
-  animation: shake 1.5s;
-  animation-iteration-count: infinite;
+	animation: shake 1.5s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
 }
-
 
 @media (max-width: 1350px) {
-  .gameboard {
-    grid-template-columns: repeat(3, auto)
-  }
-  .info {
-    flex-direction: column;
-    align-items: center;
-  }
+	.gameboard {
+		grid-template-columns: repeat(3, auto)
+	}
+	.info {
+		flex-direction: column;
+		align-items: center;
+	}
 }
-
 
 @media (max-width: 800px) {
-  .gameboard {
-    grid-template-columns: repeat(2, auto)
-  }
-
-
+	.gameboard {
+		grid-template-columns: repeat(2, auto)
+	}
 }
+
 @media (max-width: 530px) {
-  .gameboard {
-    grid-template-columns: repeat(1, auto)
-  }
+	.gameboard {
+		grid-template-columns: repeat(1, auto)
+	}
 }
 
 .social-links li a i {
@@ -274,5 +300,3 @@ position: absolute;
 	font-weight: 400;
 	text-align: center;
 }
-
-
