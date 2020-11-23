@@ -149,7 +149,7 @@ On this page you have a section for any parent that wishes to exspand the game o
 
 ### Features Left to Implement
 
-* Counting is the first of this game’s features. Further features to implement include learning letters of the alphabet, colours, and animals. 
+* Counting is the first of this game’s features. Further features to implement include learning letters of the alphabet, colours, animals and languages. 
 * The learning section will be a signle page with picture and animations against the numbers, once the user is ready then will then be passed to 'The Antmintis Game'
 * I have uploaded single numbers to the gamne that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunatly the images are poor and i would rather have a designer develop them. For now i used the images and the scource as the identifier for the match.
 * I want to add a click function to the numbers under the learn section. On Click you will have a voice speaking the number in Lithuanian, this will help the end user pronounce the words correctly.
@@ -185,7 +185,7 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 [Free Sound downloading](https://www.zapsplat.com/) - used for all sound effects.
 
-
+[EmailJS] (https://www.emailjs.com/) Used Emailjs on my contact developer page.
 
 
 ## Testing
