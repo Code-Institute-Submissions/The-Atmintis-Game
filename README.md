@@ -1,17 +1,13 @@
-Copy from Word doc.
-
-Tools
-Google fonts
-Bootstrap
-
-
-# The Atmintis Game
+The Atmintis Game
 - - - - 
 [View the live project here](https://)
 
-This is a website designed to teach children between the ages of 2 - 5 years of age how to count to ten in Lithuanian or English on a desktop computer. 
+This is a website designed to teach children between the ages of 3 - 5 years of age how to count to ten in Lithuanian or English on a desktop computer. 
 
 The game features cards on a board that users need to match the English number to the correct, corresponding Lithuanian number. There is a timer and a turn count, this can be used to see how the end user is improving, the aim here is to have highest number of seconds with the least number of turns.
+
+## Game Rules
+The Atmintis Game is a single player game. The player has to look at the buttons at the top of the screen, and learn the numbers that are not in their home language. The aim of the game is to learn through matching the cards on the game board. Once players have reviewed the numbers at the top of the screen, they start the game by turning a card to see the number on the back. Depending on the card turned, the number will be in either Lithuanian or English. Players then need to turn other cards, and find the match with their selected, corresponding card. Once the game has started, the timer countdown, and the turn indicator lets the player know how many cards they have turned over in their search for the corresponding number of a selected card. The timer, and the turn counter can be used to measure how quickly the player is learning. The less time and turns taken, the quicker the player has memorised and learnt the numbers. These functions also foster a fun, competitive element against parents, siblings or other players.
 
 
 
@@ -188,6 +184,8 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 [EmailJS](https://www.emailjs.com/) Used Emailjs on my contact developer page.
 
+[Font Awsome](https://fontawesome.com/) Used for social icons
+
 
 ## Testing
  
@@ -264,21 +262,18 @@ Websites the project website links out to.
   4. Enter the required fields and hit submit.
   5. Email is delivered, tested this with a personal email address. Information passed over is subject field, name and email fields, all passed over as mandatory fields. 
  
- 
-
-
 
 
 ## Deployment
 
 I published my website via GitHub, the below steps is how I did it:
 
-1. Navigate to my Githubrepository: https://github.com/Leefarmer83/Great-Linford-Veterans-Football-Club
+1. Navigate to my Githubrepository: https://github.com/Leefarmer83/
 2. Click on settings
 3. Under GitHub pages i clicked master branch 
 4. I choose root as my folder
 5. Clicked saved
-6. Here is the url: https://leefarmer83.github.io/Great-Linford-Veterans-Football-Club/
+6. Here is the url: https://leefarmer83.github.io/
 
 For more detailed information on how to do the above, please find instruction [here.](https://github.com/Leefarmer83/Great-Linford-Veterans-Football-Club/settings)
 
