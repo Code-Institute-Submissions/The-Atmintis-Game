@@ -74,7 +74,7 @@ h5 {
 
 .gametext.show {
 	display: flex;
-	animation: overlay-grow 700ms forwards;
+	animation: overlay-grow 1500ms forwards;
 	flex-direction: column;
 }
 
