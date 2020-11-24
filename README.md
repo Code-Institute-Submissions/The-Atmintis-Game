@@ -197,78 +197,84 @@ Used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to check CSS3 for an
 
 
 
+## Testing
+ 
+Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. All pages have the following message: Document checking completed. No errors or warnings to show.
+ 
+Used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to check CSS3 for any errors. "Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
+ 
+Used [Javascript Validator] ???
+ 
+1. Click to Start Functionality
+ 1. When opening a new browser, check to see if Click to Start  message appears. Message only disappears when the user clicks over the transparent layer area. This is important because the user may click around the vocabulary learning objects, and we don’t want to start the game at this point. 
+ 2. Clicking within the transparent layer area should start the game, and the Click to Start message and transparent layer disappear (see timer test). 
+ 3. Click to Start message size also increases when a user opens a new browser as planned. 
+ 4. Changes made - animation of Click to Start message increased time to 1.5 seconds for clearer visibility. 
+ 
+2. Learning Buttons
+ 1. When hovering over each pop-over button, the pop-over messages with the English number should appear at the top, in front of all text. If the user scrolls down, and there is limited space, the pop-over message should show below the button instead. The learning buttons grey out as the pop-over message appears above or below. Scroll down on the page so there is no longer space for the pop-over message to appear at the top, pop-over messages appear below as intended. 
+ 2. Changes made - pop-over font does not match game board font, to reinforce the difference in the numbers. 
+ 
+3. Turns Function
+ 1. Enable game by clicking Click to Start function. Click on every card to ensure the turn number starts from zero and increases on every turn of a card. Card selection works as intended. 
+ 2. By continuously clicking on one card, the turn does not increase. This is important should the user accidentally click on the card twice. 
+ 3. Once the game becomes idle from the Game Over or Winner message, the Turns counter freezes, showing the user how many turns they have taken. 
+ 
+4. Time Function
+  1. When enabling game by clicking Click to Start function, timer starts from 110 seconds and decreases down to zero (Game Over message function)
+  2. Once the game becomes disabled from Game Over or Winner messages, Timer freezes, showing the user how long it took them to complete the game, or zero for game over. 
+ 
+5. Game Over Message Function
+  1. Once timer hits zero, this enables the Game Over message function, and the transparent layer area to reappear over the cards. Tested this by allowing the timer to reach zero, this works as intended with the end of the game message displayed. 
+  2. By clicking Click to Try Again, the game restarts and the timer has reset to the original setting of 110 seconds. 
+ 
+6. Card Function 
+  1. When the game starts, all the cards are face down on the game board showing the Learn image on the back. 
+  2. When hovering over the back image of cards, Learn images shake on the back of the card as intended. 
+  3. When clicking on a card, the card flips over to show the front of the card. 
+  4. Turn the card by clicking on the card. When flipping the card, the user can only turn two cards at one time. Once a user has turned two cards, in this phase, the board does not allow the user to click on any other cards. 
+  5. When hovering over the front image of cards, the Character images shake on the front of the card as intended. 
+  6. When a card is flipped, it remains static until the second card is selected. 
+  7. Paired cards - once cards are paired, they remain face up. 
+  8. Once all the cards are turned and matched correctly, the winner message will pop up. 
 
+Functionality has been tested on every card on the game board. 
+ 
+7.  Winner Function
+  1. Once all cards are matched correctly, Winner message appears and Click to Start functionality is enabled. By clicking on Click to Start, the game begins again.
+ 
+8. Sound Functions
+  1. Countdown sound starts once the user clicks Click to Start. 
+  2. Countdown sound is on a loop. This works until it is called to stop. 
+  3. Countdown sound stops (pause) once the user either wins, or gets the Game Over message. 
+  4. Countdown sound restarts once the user clicks Try Again. 
+  5. Countdown volume tested, acknowledging the user may be in an environment with competing sounds. Countdown volume doesn’t compete with other sound functions. 
+  6. Card turn sounds works on every card once the card has been turned. 
+  7. Card match sound works on every card once card has been matched. 
+  8. Winner sound is activated once the user completes the board with matches, and accompanies the Winner Message. 
+  9. Game over sound is activated once the timer reaches zero, and is accompanied by the Game Over message. 
 
-1. Marquee scrollbar - clicked on every page to make sure the detail flows to the customrs liking, also checked on mobile devices. Next, changed the text to team news, the outcome was what was expected.
+9. Social Media Functions
+  1. Clicked on every social media function. This directs the user to correct social media platforms for each icon displayed. 
 
-* Issued found - The marquee scroll bar was tested throughout, and the marquee element was used at the start, after receiving errors on HTML validator, I realised that the element was deprecated and was not to be used in HTML5
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
+10. Linked Websites
 
+Websites that project website links out to.
 
-2. How to find us - iframe Google map
-    1. Scroll down on indext.html to the how to find us map.
-    2. Click on directions, top left corner.
-    3. New tab opens, enter current location and hit directions.
-    4. Enter your choice of travel, then proceed with direction.
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
+[Facebook](https://en-gb.facebook.com/login/)<br>
+[Twitter](https://twitter.com/login?lang=en)<br>
+[Pinterest](https://www.pinterest.co.uk/login/)<br>
+[Instagram](https://www.instagram.com/accounts/login/?hl=en)<br>
+[Youtube](https://www.youtube.com/)
 
-* Issue found - when entering the width of the map, I originally hit 100%, this was not right, changed to 600 only per research.
-
-3. Club Sponsor
-    1. Scroll to the bottom OF each page.
-    2. Click on the LTS icon
-    3. You are taken to the sponsor's website in a separate window.
-This works on each page.
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
-
-
-4. Veterans League and Veterans Fixtures.
-    1. Go to team page
-    2. Click on both Veterans Leauge and Veterans Fixtures badges.
-    3. Each one takes the end user to their expected destination in a separate window.
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
-
-5. Progress Bars on player stats.
-    1. Go to team page.
-    2. Visually the bars look great.
-    3. Updated/changed states on Mark Culley in the team.html file and saved.
-    4. Visually the change looks great and is what the customer asked for.
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
-
-6. Form on the Social page.
-    1. Go to social page.
-    2. Click on submit.
-    3. Error shows for each of the required fields as intended.
-    4. Enter the required fields and hit submit.
-    5. User taken to codeinstitute holding site as intended.
-This form will be completed once I learn how to send data to intended email address.
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
-
-7. Gallery page
-    1. Go to social page.
-    2. Click on image in the Gallery section.
-    3. The image pops up with a toggle.
-    4. Click to toggle for next image.
-    5. Click on image to return back.
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
-
-* Issue found - Two images were not the same size and slightly moved some code, this was fixed by resizing the images.
-
-8. Contact us form.
-    1. Go to contact page.
-    2. Click on submit.
-    3. Error shows for each of the required fields as intended.
-    4. Enter the required fields and hit submit.
-    5. User taken to constitute a holding site, as intended.
-This form will be completed once I learn how to send data to intended email address.
-Inspected/tested on both desktop and mobile device, using google chrome inspect feature. Looks good on both.
-
-9. The website has been tested on desktop and mobile devices using google chrome developer tools and is responsive on mobile and desktop devices. 
-
-10. Management was given my github link to the website to test. 
-    1. Management asked me to remove the placeholder image with another they provided, until they send a team photo.
-    2. All users were asked to click on every page, link and icon on both mobile and desktop. Management Didn't find any issues with the website and are very happy.
-    3. Management are looking forward to the future improvements, this will come after the assesment.
+11. Contact Form Function
+  1. Go to Contact Developer page.
+  2. Click on submit.
+  3. Error shows for each of the required fields as intended.
+  4. Enter the required fields and hit submit.
+  5. Email is delivered, tested this with a personal email address. Information passed over is subject field, name and email fields, all passed over as mandatory fields. 
+ 
+ 
 
 
 
