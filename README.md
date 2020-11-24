@@ -186,7 +186,7 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 [Free Sound downloading](https://www.zapsplat.com/) - used for all sound effects.
 
-[EmailJS] (https://www.emailjs.com/) Used Emailjs on my contact developer page.
+[EmailJS](https://www.emailjs.com/) Used Emailjs on my contact developer page.
 
 
 ## Testing
