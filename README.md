@@ -190,14 +190,6 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 
 ## Testing
-
-Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. All pages have the following message: Document checking completed. No errors or warnings to show.
-
-Used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to check CSS3 for any errors. "Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
-
-
-
-## Testing
  
 Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. All pages have the following message: Document checking completed. No errors or warnings to show.
  
@@ -205,30 +197,30 @@ Used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to check CSS3 for an
  
 Used [Javascript Validator] ???
  
-1. Click to Start Functionality
+#### Click to Start Functionality
  1. When opening a new browser, check to see if Click to Start  message appears. Message only disappears when the user clicks over the transparent layer area. This is important because the user may click around the vocabulary learning objects, and we don’t want to start the game at this point. 
  2. Clicking within the transparent layer area should start the game, and the Click to Start message and transparent layer disappear (see timer test). 
  3. Click to Start message size also increases when a user opens a new browser as planned. 
  4. Changes made - animation of Click to Start message increased time to 1.5 seconds for clearer visibility. 
  
-2. Learning Buttons
+#### Learning Buttons
  1. When hovering over each pop-over button, the pop-over messages with the English number should appear at the top, in front of all text. If the user scrolls down, and there is limited space, the pop-over message should show below the button instead. The learning buttons grey out as the pop-over message appears above or below. Scroll down on the page so there is no longer space for the pop-over message to appear at the top, pop-over messages appear below as intended. 
  2. Changes made - pop-over font does not match game board font, to reinforce the difference in the numbers. 
  
-3. Turns Function
+#### Turns Function
  1. Enable game by clicking Click to Start function. Click on every card to ensure the turn number starts from zero and increases on every turn of a card. Card selection works as intended. 
  2. By continuously clicking on one card, the turn does not increase. This is important should the user accidentally click on the card twice. 
  3. Once the game becomes idle from the Game Over or Winner message, the Turns counter freezes, showing the user how many turns they have taken. 
  
-4. Time Function
+#### Time Function
   1. When enabling game by clicking Click to Start function, timer starts from 110 seconds and decreases down to zero (Game Over message function)
   2. Once the game becomes disabled from Game Over or Winner messages, Timer freezes, showing the user how long it took them to complete the game, or zero for game over. 
  
-5. Game Over Message Function
+#### Game Over Message Function
   1. Once timer hits zero, this enables the Game Over message function, and the transparent layer area to reappear over the cards. Tested this by allowing the timer to reach zero, this works as intended with the end of the game message displayed. 
   2. By clicking Click to Try Again, the game restarts and the timer has reset to the original setting of 110 seconds. 
  
-6. Card Function 
+#### Card Function 
   1. When the game starts, all the cards are face down on the game board showing the Learn image on the back. 
   2. When hovering over the back image of cards, Learn images shake on the back of the card as intended. 
   3. When clicking on a card, the card flips over to show the front of the card. 
@@ -240,10 +232,10 @@ Used [Javascript Validator] ???
 
 Functionality has been tested on every card on the game board. 
  
-7.  Winner Function
+####  Winner Function
   1. Once all cards are matched correctly, Winner message appears and Click to Start functionality is enabled. By clicking on Click to Start, the game begins again.
  
-8. Sound Functions
+#### Sound Functions
   1. Countdown sound starts once the user clicks Click to Start. 
   2. Countdown sound is on a loop. This works until it is called to stop. 
   3. Countdown sound stops (pause) once the user either wins, or gets the Game Over message. 
@@ -254,12 +246,10 @@ Functionality has been tested on every card on the game board.
   8. Winner sound is activated once the user completes the board with matches, and accompanies the Winner Message. 
   9. Game over sound is activated once the timer reaches zero, and is accompanied by the Game Over message. 
 
-9. Social Media Functions
+#### Social Media Functions
   1. Clicked on every social media function. This directs the user to correct social media platforms for each icon displayed. 
 
-10. Linked Websites
-
-Websites that project website links out to.
+Websites the project website links out to.
 
 [Facebook](https://en-gb.facebook.com/login/)<br>
 [Twitter](https://twitter.com/login?lang=en)<br>
@@ -323,5 +313,3 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 Ashley White - Gallery lightbox copied code for the gallery section.
 http://ashleydw.github.io/lightbox/
-
-### NOTE - During this project I had to work from the hospital (first baby arrival) for the first three days, I created the header/footer/index.html and team.html pages. I was adding and committing every change while creating these pages. Once I got home, it looked like the commits did not save, in fact most the work did not. This left me stressed and worried. I created the pages from scratch again, but did not commit as much as I first did. 
