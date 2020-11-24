@@ -153,7 +153,8 @@ On this page you have a section for any parent that wishes to exspand the game o
 * The learning section will be a signle page with picture and animations against the numbers, once the user is ready then will then be passed to 'The Antmintis Game'
 * I have uploaded single numbers to the gamne that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunatly the images are poor and i would rather have a designer develop them. For now i used the images and the scource as the identifier for the match.
 * I want to add a click function to the numbers under the learn section. On Click you will have a voice speaking the number in Lithuanian, this will help the end user pronounce the words correctly.
-
+* pop up meesage that states email has been sent on the developer contact page.
+* To look at away to make the game mobile friendly, intended use is desktop only due to the need of a large screen.
 
 - - - -
 
@@ -193,6 +194,8 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. All pages have the following message: Document checking completed. No errors or warnings to show.
 
 Used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to check CSS3 for any errors. "Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
+
+
 
 
 
