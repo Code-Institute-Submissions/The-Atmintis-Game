@@ -130,21 +130,26 @@ h5 {
 	border-color: rgb(255, 193, 5);
 	backface-visibility: hidden;
 	transition: transform 700ms ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+
 }
 
 .card.show .backofcard {
 	transform: rotateY(-180deg);
     -webkit-backface-visibility: hidden;
--moz-backface-visibility:    hidden;
--ms-backface-visibility:     hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
 
 }
 
 .card.show .frontofcard {
 	transform: rotateY(-0deg);
     -webkit-backface-visibility: hidden;
--moz-backface-visibility:    hidden;
--ms-backface-visibility:     hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
 
 }
 
