@@ -1,6 +1,6 @@
-The Atmintis Game
+# The Atmintis Game
 - - - - 
-[View the live project here](https://)
+[View the live project here](https://leefarmer83.github.io/The-Atmintis-Game/)
 
 This is a website designed to teach children between the ages of 3 - 5 years of age how to count to ten in Lithuanian or English on a desktop computer. 
 
@@ -25,7 +25,7 @@ The Atmintis Game is a single player game. The player has to look at the buttons
 * The website must be children friendly as well as accessible.
 * Contact Developer option should Parents want more games or Languages.
 * Game must have a start and end trigger for good user experience.
-* Memory and learning go hand in hand, this website willl use both skilld to help teach the user count to ten in another language.
+* Memory and learning go hand in hand, this website will use both skills to help teach the user count to ten in another language.
 
 
 
@@ -33,7 +33,7 @@ The Atmintis Game is a single player game. The player has to look at the buttons
 
 The game is for children (and their parents) who would like to learn to count in Lithuanian or English. The easy to use interface features timers, graphics and sounds that make learning fun, encouraging repetition which will aid retention of the concepts. 
 
-The game is designed to be played on a computer, not mobile devices. The screen is responsive (mobile first) but the user exsperience needs a larger screen.
+The game is designed to be played on a desktop computor or laptop, not mobile devices. The screen is responsive (mobile first) but the user experience is important, seeing all cards needs a larger screen.
 
 
 *Who are the users - in order*
@@ -45,32 +45,31 @@ The game is designed to be played on a computer, not mobile devices. The screen 
 *What will they be using the site for:*
 
 ### Children
-A fun way to count to ten in another language, as well as trainning the brain with the memory board.
+A fun way to count to ten in another language, as well as training the brain with the memory board.
 
 ### Parents
 
-A fun way to teach their children and themselves another language, as well as trainning the brain with the memory board.
-
+A fun way to teach their children and themselves another language, as well as training the brain with the memory board.
 
 
 **User Stories:**
 
 * Parent -  I am English and my wife is Lithuanian, we need a platform to teach our child how to count to ten in both languages<br>
 * Parent -  It is hard to get my child to concentrate and learn Lithuanian, I need a platform that is fun while learning<br>
-* Parent -  I would like a platform that gives some type of bench marker for improvment<br>
+* Parent -  I would like a platform that gives some type of bench marker for improvement<br>
 * Child - I want to learn Lithuanian as my mum comes from Lithuania<br>
-* Child - I want to learn Lithuanian using a fun platform where I can see improvments<br>
+* Child - I want to learn Lithuanian using a fun platform where I can see improvements<br>
 * Parent - I would like other learning subjects not just counting to ten.
 
 
 
 # Wireframes
-[The Atmintis Game]()<br>
-[Click to start]()<br>
-[winner message]()<br>
-[Game Over message]()<br>
-[mobile view (not for mobile)]()<br>
-[tablet view (not for tablet)]()<br>
+[The Atmintis Game](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20The%20Game.jpeg)<br>
+[Click to start](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20Click%20to%20start.jpeg)<br>
+[winner message](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20Winner%20message.jpeg)<br>
+[Game Over message](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20Game%20Over.jpeg)<br>
+[mobile view (not for mobile)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20mobile%20but%20screen%20will%20be%20responsive..jpeg)<br>
+[tablet view (not for tablet)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20ipad%20but%20screen%20will%20be%20responsive.%20.jpeg)<br>
 
 ## Design 
 
@@ -80,7 +79,7 @@ Colour and font were taken into account in order to make the interface eye catch
 I designed all the images myself using a free image website: https://www.shutterstock.com/, I then copied and designed these on a word doc, converting to PNG files. I would in future source this out or take a design course. 
 The images had to be friendly and fun.
 ### Sound
-I downloaded my sounds from: https://www.zapsplat.com/. I selected the sound for children, helping the game to be fun adnd happy
+I downloaded my sounds from: https://www.zapsplat.com/. I selected the sound for children, helping the game to be fun and happy.
 - - - -
 
 ## Learn Section
@@ -89,7 +88,7 @@ This sections has Lithuanian numbers 1 t 10 on buttons, when you hover over the 
 
 **Related user story addressed:**
 
-* Parent -  I am English and my wife is Lithuanian, we need a platform to teach our child how to count to ten in both languages.
+* Parent - I am English and my wife is Lithuanian, we need a platform to teach our child how to count to ten in both languages.
 * Child - I want to learn Lithuanian as my mum comes from Lithuania.
 
 ### Click to Start
@@ -102,8 +101,8 @@ I have included a countdown for the end user so they can countify their learning
 
 **Related user story addressed:**
 
-* Parent -  I would like a platform that gives some type of bench marker for improvment.
-* Child - I want to learn Lithuanian using a fun platform where i can see improvments.
+* Parent -  I would like a platform that gives some type of bench marker for improvement.
+* Child - I want to learn Lithuanian using a fun platform where i can see improvements.
 * Parent -  It is hard to get my child to concentrate and learn Lithuanian, I need a platform that is fun while learning.
 
 
@@ -113,8 +112,8 @@ I have also included a turn counter, like the timer but intead increasing as the
 
 **Related user story addressed:**
 
-* Parent -  I would like a platform that gives some type of bench marker for improvment.
-* Child - I want to learn Lithuanian using a fun platform where i can see improvments.
+* Parent -  I would like a platform that gives some type of bench marker for improvement.
+* Child - I want to learn Lithuanian using a fun platform where i can see improvements.
 * Parent -  It is hard to get my child to concentrate and learn Lithuanian, I need a platform that is fun while learning.
 
 ### Gameboard
@@ -123,20 +122,20 @@ The gameboard has 20 cards. Ten times 2 sets, with 1 to 10 for each language (En
 
 The user clicks on a card, this will turn the card over and the image will shake while you are hovering, turning the card is accompanied with a turning sound, the user then has select another card, the goal here is to find the opposite language number. If the cards match the cards stay put and the user will get a matched sound. If the cards do not match they turn back over for the user to start searching again.
 
-Every click will increase the turn counter, while the clock is ticking down. If the user completes the game by matching all the cards on the board before the time runs out, they are presented wiuth a winner message and the option to click and try again.
+Every click will increase the turn counter, while the clock is ticking down. If the user completes the game by matching all the cards on the board before the time runs out, they are presented with a winner message and the option to click and try again.
 
 **Related user story addressed:**
 
 * Parent -  I am English and my wife is Lithuanian, we need a platform to teach our child how to count to ten in both languages<br>
 * Parent -  It is hard to get my child to concentrate and learn Lithuanian, I need a platform that is fun while learning<br>
-* Parent -  I would like a platform that gives some type of bench marker for improvment<br>
+* Parent -  I would like a platform that gives some type of bench marker for improvement<br>
 * Child - I want to learn Lithuanian as my mum comes from Lithuania<br>
-* Child - I want to learn Lithuanian using a fun platform where I can see improvments<br>
+* Child - I want to learn Lithuanian using a fun platform where I can see improvements<br>
 
 
 ### Contact Developer
 
-On this page you have a section for any parent that wishes to exspand the game or ask for it in another language. This uses EmailJS 
+On this page you have a section for any parent that wishes to expand the game or ask for it in another language. This uses EmailJS.
 
 **Related user story addressed:**
 
@@ -146,10 +145,10 @@ On this page you have a section for any parent that wishes to exspand the game o
 ### Features Left to Implement
 
 * Counting is the first of this game’s features. Further features to implement include learning letters of the alphabet, colours, animals and languages. 
-* The learning section will be a signle page with picture and animations against the numbers, once the user is ready then will then be passed to 'The Antmintis Game'
-* I have uploaded single numbers to the gamne that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunatly the images are poor and i would rather have a designer develop them. For now i used the images and the scource as the identifier for the match.
+* The learning section will be a single  page with picture and animations against the numbers, once the user is ready then will then be passed to 'The Antmintis Game'
+* I have uploaded single number images to the game that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunately the images are poor and I would rather have a designer develop them. For now I used the images and the scsource ource as the identifier for the match.
 * I want to add a click function to the numbers under the learn section. On Click you will have a voice speaking the number in Lithuanian, this will help the end user pronounce the words correctly.
-* pop up meesage that states email has been sent on the developer contact page.
+* pop up message that states email has been sent on the developer contact page.
 * To look at away to make the game mobile friendly, intended use is desktop only due to the need of a large screen.
 
 - - - -
@@ -184,7 +183,7 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 [EmailJS](https://www.emailjs.com/) Used Emailjs on my contact developer page.
 
-[Font Awsome](https://fontawesome.com/) Used for social icons
+[Font Awesome](https://fontawesome.com/) Used for social icons
 
 
 ## Testing
@@ -268,43 +267,23 @@ Websites the project website links out to.
 
 I published my website via GitHub, the below steps is how I did it:
 
-1. Navigate to my Githubrepository: https://github.com/Leefarmer83/
+1. Navigate to my Githubrepository: https://github.com/Leefarmer83/The-Atmintis-Game
 2. Click on settings
 3. Under GitHub pages i clicked master branch 
 4. I choose root as my folder
 5. Clicked saved
-6. Here is the url: https://leefarmer83.github.io/
+6. Here is the url: https://leefarmer83.github.io/The-Atmintis-Game/
 
-For more detailed information on how to do the above, please find instruction [here.](https://github.com/Leefarmer83/Great-Linford-Veterans-Football-Club/settings)
 
 If you wish to clone my repository, information on how can be found [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-## Credit
+## Credit & Acknowledgements
 
-Adam Pritchard - Markdown Cheatsheet to help me with the README file
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+Huge thank you to: WebDevSimplified, they have some fantastic tutorials on how to design and more importantly work with objects in javascript, The tutorials helped me with javascript and understanding the why.
 
-Ashley White - Gallery lightbox copied code for the gallery section.
-http://ashleydw.github.io/lightbox/
-
-Anna Greaves - for GitHub documentation in the deployment section.
-
-
-## Content
-The Gallery was copied from http://ashleydw.github.io/lightbox/ - Ashley White
-
-
-## Media
-The photos used in this site were obtained from Great Linford Management.
-
-## Acknowledgements
+https://github.com/WebDevSimplified
 
 I used https://github.com/Code-Institute-Solutions/readme-template as a template for the README file
 
 Anna Greaves - for GitHub documentation in the deployment section. https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site and https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 
-Adam Pritchard - Markdown Cheatsheet to help me with the README file
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
-Ashley White - Gallery lightbox copied code for the gallery section.
-http://ashleydw.github.io/lightbox/
