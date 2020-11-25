@@ -250,27 +250,6 @@ h5 {
 	}
 }
 
-@media (max-width: 1350px) {
-	.gameboard {
-		grid-template-columns: repeat(3, auto)
-	}
-	.info {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
-@media (max-width: 800px) {
-	.gameboard {
-		grid-template-columns: repeat(2, auto)
-	}
-}
-
-@media (max-width: 530px) {
-	.gameboard {
-		grid-template-columns: repeat(1, auto)
-	}
-}
 
 .social-links li a i {
 	width: 32px;
@@ -299,4 +278,26 @@ h5 {
 .Socialfoot {
 	font-weight: 400;
 	text-align: center;
+}
+
+@media (max-width: 1350px) {
+	.gameboard {
+		grid-template-columns: repeat(3, auto)
+	}
+	.info {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 800px) {
+	.gameboard {
+		grid-template-columns: repeat(2, auto)
+	}
+}
+
+@media (max-width: 530px) {
+	.gameboard {
+		grid-template-columns: repeat(1, auto)
+	}
 }
