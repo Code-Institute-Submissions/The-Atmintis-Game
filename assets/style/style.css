@@ -294,10 +294,18 @@ h5 {
 	.gameboard {
 		grid-template-columns: repeat(2, auto)
 	}
+    	.info {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 @media (max-width: 530px) {
 	.gameboard {
 		grid-template-columns: repeat(1, auto)
+	}
+    	.info {
+		flex-direction: column;
+		align-items: center;
 	}
 }
