@@ -134,10 +134,18 @@ h5 {
 
 .card.show .backofcard {
 	transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+
 }
 
 .card.show .frontofcard {
 	transform: rotateY(-0deg);
+    -webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+
 }
 
 .value {
