@@ -150,7 +150,7 @@ class Atmintis {
         this.doNotShowCards();
 
     }
-    // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle and web dev simplified hellped me to undersatand how to write in javascript
+    // Fisher & Yates formula, see credits
 
     shufflePack() {
         for (let i = this.cardsArray.length - 1; i > 0; i--) {

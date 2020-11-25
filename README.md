@@ -283,6 +283,8 @@ Huge thank you to: WebDevSimplified, they have some fantastic tutorials on how t
 
 https://github.com/WebDevSimplified
 
+https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle  copied the fomular with the help of WebDevSimplified.
+
 I used https://github.com/Code-Institute-Solutions/readme-template as a template for the README file
 
 Anna Greaves - for GitHub documentation in the deployment section. https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site and https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
