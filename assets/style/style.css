@@ -146,7 +146,7 @@ h5 {
 }
 
 .card.show .frontofcard {
-    transform: rotateY(-0deg);
+    transform: rotateY(0deg);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:    hidden;
     -ms-backface-visibility:     hidden;
