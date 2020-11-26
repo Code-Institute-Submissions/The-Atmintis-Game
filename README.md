@@ -10,7 +10,6 @@ The game features cards on a board that users need to match the English number t
 The Atmintis Game is a single player game. The player has to look at the buttons at the top of the screen, and learn the numbers that are not in their home language. The aim of the game is to learn through matching the cards on the game board. Once players have reviewed the numbers at the top of the screen, they start the game by turning a card to see the number on the back. Depending on the card turned, the number will be in either Lithuanian or English. Players then need to turn other cards, and find the match with their selected, corresponding card. Once the game has started, the timer countdown, and the turn indicator lets the player know how many cards they have turned over in their search for the corresponding number of a selected card. The timer, and the turn counter can be used to measure how quickly the player is learning. The less time and turns taken, the quicker the player has memorised and learnt the numbers. These functions also foster a fun, competitive element against parents, siblings or other players.
 
 
-
 # Website Objective Summary
  
 * Fully functional website for parents to use with their children to learn how to count from 1 to 10 in Lithuanian or English.
@@ -226,6 +225,7 @@ Used [Javascript Validator] ???
   6. When a card is flipped, it remains static until the second card is selected. 
   7. Paired cards - once cards are paired, they remain face up. 
   8. Once all the cards are turned and matched correctly, the winner message will pop up. 
+  9. Clicked on first card multilpe times after resetiing to make sure cards are shuffled.
 
 Functionality has been tested on every card on the game board. 
  
