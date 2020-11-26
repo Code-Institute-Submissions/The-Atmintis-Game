@@ -70,6 +70,9 @@ A fun way to teach their children and themselves another language, as well as tr
 [mobile view (not for mobile)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20mobile%20but%20screen%20will%20be%20responsive..jpeg)<br>
 [tablet view (not for tablet)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20ipad%20but%20screen%20will%20be%20responsive.%20.jpeg)<br>
 
+The wireframes helpped me realise that thegame really needs a laptop or comoputer screen for the best user experience. I still mapped out what the mobile and tablet version may lok like and coded with mobile first in mind.
+However, this game is meant to be played on a screen or laptop. 
+
 ## Design 
 
 ### Colour and font
