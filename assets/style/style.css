@@ -3,346 +3,331 @@
 /*------------------General------------------*/
 
 * {
-    box-sizing: border-box;
-    /*Helps with sizing the eliments*/
+	box-sizing: border-box;
+	/*Helps with sizing the eliments*/
 }
 
 body {
-    font-family: 'Ribeye', sans-serif;
-    margin: 0;
-    background-color: rgb(17, 0, 255);
-     /*all text tobe Ribeye, unless stated, pulled from imoport above*/
+	font-family: 'Ribeye', sans-serif;
+	margin: 0;
+	background-color: rgb(17, 0, 255);
+	/*all text tobe Ribeye, unless stated, pulled from imoport above*/
 }
 
 h4,
 h5 {
-    color: white;
+	color: white;
 }
 
 
 /*------------------title------------------*/
 
 .title {
-    font-family: 'Ribeye', sans-serif;
-    color: #ffffff;
-    font-size: 400%;
-    /**/
+	font-family: 'Ribeye', sans-serif;
+	color: #ffffff;
+	font-size: 400%;
+	/**/
 }
 
 
 /*------------------Counter and Turns------------------*/
 
 .info {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*turn and countdown text inline , moving grid blocks down */
+	grid-column: 1 / -1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*turn and countdown text inline , moving grid blocks down */
 }
 
 .gameinfo {
-    font-family: 'Ribeye', sans-serif;
-    color: #ffffff;
-    font-size: 300%;
+	font-family: 'Ribeye', sans-serif;
+	color: #ffffff;
+	font-size: 300%;
 }
 
 .popover-title {
-    color: black;
-    font-family: 'Ribeye', sans-serif;
+	color: black;
+	font-family: 'Ribeye', sans-serif;
 }
 
 .popover-content {
-    color: black;
-    font-family: 'Ribeye', sans-serif;
+	color: black;
+	font-family: 'Ribeye', sans-serif;
 }
 
 .fade:not(.show) {
-    opacity: 10;
+	opacity: 10;
 }
 
 
 /*------------------Game Text------------------*/
 
 .gametext {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    display: none;
-
-    /*this will cover screen with text message*/
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	display: none;
+	/*this will cover screen with text message*/
 }
 
 .gametext.show {
-    display: flex;
-    animation: overlay-grow 1500ms forwards;
-    flex-direction: column;
+	display: flex;
+	animation: overlay-grow 1500ms forwards;
+	flex-direction: column;
 }
 
 .gamemessage {
-    font-size: 70%;
+	font-size: 70%;
 }
 
 @keyframes overlay-grow {
-    from {
-        background-color: rgb(59, 60, 82);
-        font-size: 0;
-    }
-    to {
-        background-color: rgb(59, 60, 82, .8);
-        font-size: 300%;
-    }
+	from {
+		background-color: rgb(59, 60, 82);
+		font-size: 0;
+	}
+	to {
+		background-color: rgb(59, 60, 82, .8);
+		font-size: 300%;
+	}
 }
 
 
 /*------------------Cards------------------*/
 
 .gameboard {
-    color: white;
-    background-color: rgb(17, 0, 255);
-    padding-bottom: 2%;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
-    justify-content: center;
-    perspective: 500px;
-    /*building out the grid*/
+	color: white;
+	background-color: rgb(17, 0, 255);
+	padding-bottom: 2%;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-gap: 10px;
+	justify-content: center;
+	perspective: 500px;
+	/*building out the grid*/
 }
 
 .card {
-    position: relative;
-    height: 175px;
-    width: 250px;
-    background-color: rgb(17, 0, 255);
-    border: none;
-    /*Card sizing and colour*/
+	position: relative;
+	height: 175px;
+	width: 250px;
+	background-color: rgb(17, 0, 255);
+	border: none;
+	/*Card sizing and colour*/
 }
 
 .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    backface-visibility: hidden;
-    border-radius: 15px;
-    border-width: 5px;
-    border-style: ridge;
-    border-color: rgb(255, 193, 5);
-    backface-visibility: hidden;
-    transition: transform 700ms ease-in-out;
-
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility:    hidden;
-    -ms-backface-visibility:     hidden;
-
-    /*face of card styles*/
-
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	backface-visibility: hidden;
+	border-radius: 15px;
+	border-width: 5px;
+	border-style: ridge;
+	border-color: rgb(255, 193, 5);
+	backface-visibility: hidden;
+	transition: transform 700ms ease-in-out;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	/*face of card styles*/
 }
 
 .card.show .backofcard {
-    transform: rotateY(-180deg);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility:    hidden;
-    -ms-backface-visibility:     hidden;
-
-    /*using show, make backof card rotate*/
-
+	transform: rotateY(-180deg);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	/*using show, make backof card rotate*/
 }
 
 .card.show .frontofcard {
-    transform: rotateY(0deg);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility:    hidden;
-    -ms-backface-visibility:     hidden;
-    /*using show, make front of card rotate*/
-
+	transform: rotateY(0deg);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	/*using show, make front of card rotate*/
 }
 
 .value {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .backofcard {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(255, 193, 5);
-    transform: rotateY(0);
-
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility:    hidden;
-    -ms-backface-visibility:     hidden;
-
-    /*back of card styled*/
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 193, 5);
+	transform: rotateY(0);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	/*back of card styled*/
 }
 
 .frontofcard {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(255, 193, 5);
-    transform: rotateY(180deg);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility:    hidden;
-    -ms-backface-visibility:     hidden;
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 193, 5);
+	transform: rotateY(180deg);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
 }
 
 .frontimage {
-    position: absolute;
-
+	position: absolute;
 }
 
 .frontimage:hover {
-    animation: shake 1.5s;
-    animation-iteration-count: infinite;
+	animation: shake 1.5s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-        /*animation on card*/
-    }
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+		/*animation on card*/
+	}
 }
 
 .backimage {
-    position: absolute;
-    
+	position: absolute;
 }
 
 .backimage:hover {
-    animation: shake 1.5s;
-    animation-iteration-count: infinite;
+	animation: shake 1.5s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
-    /*animation on card*/
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+	/*animation on card*/
 }
 
-
 .social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background: rgb(17, 0, 255);
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+	width: 32px;
+	height: 32px;
+	padding: 12px 0;
+	border-radius: 50%;
+	font-size: 13px;
+	line-height: 7px;
+	text-align: center;
+	color: #fafafa;
+	background: rgb(17, 0, 255);
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-    background: rgb(37, 37, 37);
+	background: rgb(37, 37, 37);
 }
 
 #footer-details {
-    padding: 20px;
+	padding: 20px;
 }
 
 .Socialfoot {
-    font-weight: 400;
-    text-align: center;
+	font-weight: 400;
+	text-align: center;
 }
 
 @media (max-width: 1350px) {
-    .gameboard {
-        grid-template-columns: repeat(3, auto)
-    }
-    .info {
-        flex-direction: column;
-        align-items: center;
-    }
-  
+	.gameboard {
+		grid-template-columns: repeat(3, auto)
+	}
+	.info {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 @media (max-width: 800px) {
-    .gameboard {
-        grid-template-columns: repeat(2, auto)
-    }
-        .info {
-        flex-direction: column;
-        align-items: center;
-    }
- 
+	.gameboard {
+		grid-template-columns: repeat(2, auto)
+	}
+	.info {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 @media (max-width: 530px) {
-    .gameboard {
-        grid-template-columns: repeat(1, auto)
-    }
-        .info {
-        flex-direction: column;
-        align-items: center;
-    }
-   
+	.gameboard {
+		grid-template-columns: repeat(1, auto)
+	}
+	.info {
+		flex-direction: column;
+		align-items: center;
+	}
 }

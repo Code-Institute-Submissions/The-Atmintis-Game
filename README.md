@@ -188,10 +188,18 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 ## Testing
  
 Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. All pages have the following message: Document checking completed. No errors or warnings to show.
- 
+
+Acceptable errors:
+1- Error: Bad value data:image/x-icon; for attribute href on element link: Premature end of URI. - this removes the error on console as it is looking for favicon, but the game doesn't have one.  
+20 -  Error  An img element must have an alt attribute, except under certain conditions. - the images are hidden and i am using the class and scr to match cards, wont need the message as the image will never show.
+
+
 Used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to check CSS3 for any errors. "Congratulations! No Error Found. This document validates as CSS level 3 + SVG !"
- 
-Used [Javascript Validator] ???
+Congratulations! No Error Found.
+
+
+Used [Javascript Validator] (https://esprima.org/demo/validate.html)
+Code is syntactically valid.
  
 #### Click to Start Functionality
  1. When opening a new browser, check to see if Click to Start  message appears. Message only disappears when the user clicks over the transparent layer area. This is important because the user may click around the vocabulary learning objects, and we don’t want to start the game at this point. 
