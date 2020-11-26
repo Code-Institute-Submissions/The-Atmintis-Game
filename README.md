@@ -32,7 +32,7 @@ The Atmintis Game is a single player game. The player has to look at the buttons
 
 The game is for children (and their parents) who would like to learn to count in Lithuanian or English. The easy to use interface features timers, graphics and sounds that make learning fun, encouraging repetition which will aid retention of the concepts. 
 
-The game is designed to be played on a desktop computor or laptop, not mobile devices. The screen is responsive (mobile first) but the user experience is important, seeing all cards needs a larger screen.
+The game is designed to be played on a desktop computer or laptop, not mobile devices. The screen is responsive (mobile first) but the user experience is important, seeing all cards needs a larger screen.
 
 
 *Who are the users - in order*
@@ -92,11 +92,11 @@ This sections has Lithuanian numbers 1 t 10 on buttons, when you hover over the 
 
 ### Click to Start
 
-Once the user feels confident, the can start the game buy clicking on the box "click to start" This will then start a funny countdown along with a timer and turn count.
+Once the user feels confident, they can start the game by clicking on the box "click to start" This will then start a funny countdown along with a timer and turn count.
 
 ### Timer - Count Down 
 
-I have included a countdown for the end user so they can countify their learning, they have 110 seconds to match all the English numbers with their corresponding Lithuanian number. This feature allows the end user to see how long it took and also encourage them to come back and beat the time they set. If the time reaches 0 seconds, a game over message will appear along with a message "click to start again".
+I have included a countdown for the end user so they can quantify their learning, they have 110 seconds to match all the English numbers with their corresponding Lithuanian number. This feature allows the end user to see how long it took and also encourage them to come back and beat the time they set. If the time reaches 0 seconds, a game over message will appear along with a message "click to start again".
 
 **Related user story addressed:**
 
@@ -107,7 +107,7 @@ I have included a countdown for the end user so they can countify their learning
 
 ### Turn - counter
 
-I have also included a turn counter, like the timer but intead increasing as the user clicks on a card. this is another way for the user to test themselves, it also gives them a score to beat.
+I have also included a turn counter, like the timer but instead increasing as the user clicks on a card. this is another way for the user to test themselves, it also gives them a score to beat.
 
 **Related user story addressed:**
 
@@ -145,7 +145,7 @@ On this page you have a section for any parent that wishes to expand the game or
 
 * Counting is the first of this game’s features. Further features to implement include learning letters of the alphabet, colours, animals and languages. 
 * The learning section will be a single  page with picture and animations against the numbers, once the user is ready then will then be passed to 'The Antmintis Game'
-* I have uploaded single number images to the game that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunately the images are poor and I would rather have a designer develop them. For now I used the images and the scsource ource as the identifier for the match.
+* I have uploaded single number images to the game that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunately the images are poor and I would rather have a designer develop them. For now I used the images class and the source as the identifier for the match.
 * I want to add a click function to the numbers under the learn section. On Click you will have a voice speaking the number in Lithuanian, this will help the end user pronounce the words correctly.
 * pop up message that states email has been sent on the developer contact page.
 * To look at away to make the game mobile friendly, intended use is desktop only due to the need of a large screen.
@@ -233,7 +233,7 @@ Code is syntactically valid.
   6. When a card is flipped, it remains static until the second card is selected. 
   7. Paired cards - once cards are paired, they remain face up. 
   8. Once all the cards are turned and matched correctly, the winner message will pop up. 
-  9. Clicked on first card multilpe times after resetiing to make sure cards are shuffled.
+  9. Clicked on first card multiple times after resetting, to make sure cards are shuffled.
 
 Functionality has been tested on every card on the game board. 
  
@@ -291,7 +291,7 @@ Huge thank you to: WebDevSimplified, they have some fantastic tutorials on how t
 
 https://github.com/WebDevSimplified
 
-https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle  copied the fomular with the help of WebDevSimplified.
+https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle  copied the formula with the help of WebDevSimplified.
 
 I used https://github.com/Code-Institute-Solutions/readme-template as a template for the README file
 
