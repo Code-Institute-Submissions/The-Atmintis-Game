@@ -287,7 +287,7 @@ If you wish to clone my repository, information on how can be found [here.](http
 
 ## Credit & Acknowledgements
 
-Huge thank you to: WebDevSimplified, they have some fantastic tutorials on how to design and more importantly work with objects in javascript, The tutorials helped me with javascript and understanding the why.
+Huge thank you to: WebDevSimplified, they have some fantastic tutorials on how to design and more importantly work with objects in javascript, The tutorials helped me with javascript and understanding the why, I also used the same logic in parts of the coding.
 
 https://github.com/WebDevSimplified
 
