@@ -189,6 +189,8 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 
 ## Testing
+
+I have given the URL out to my partners family, they speak Lithuanian and have children between 3-7, they have all tested the game and love it. no bugs or issues reported. in total 12 people have now played the game.
  
 Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. All pages have the following message: Document checking completed. No errors or warnings to show.
 
