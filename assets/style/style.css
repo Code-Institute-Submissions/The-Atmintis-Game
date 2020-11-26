@@ -185,6 +185,9 @@ h5 {
     background-color: rgb(255, 255, 255);
     border-color: rgb(255, 193, 5);
     transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
 }
 
 .frontimage {
@@ -319,19 +322,7 @@ h5 {
         flex-direction: column;
         align-items: center;
     }
-    .gametext {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    display: none;
-
-    /*this will cover screen with text message*/
-}
+  
 }
 
 @media (max-width: 800px) {
@@ -342,19 +333,7 @@ h5 {
         flex-direction: column;
         align-items: center;
     }
-    .gametext {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    display: none;
-
-    /*this will cover screen with text message*/
-}
+ 
 }
 
 @media (max-width: 530px) {
@@ -365,17 +344,5 @@ h5 {
         flex-direction: column;
         align-items: center;
     }
-    .gametext {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    display: none;
-
-    /*this will cover screen with text message*/
-}
+   
 }
