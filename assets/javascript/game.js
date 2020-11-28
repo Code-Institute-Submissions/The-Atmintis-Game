@@ -1,16 +1,18 @@
 $(function() {
+    // Bootstrap and popover - this allows english numbers to show over the Lithuanian.
     $('[data-toggle="popover"]').popover({
         placement: 'top',
         trigger: 'hover'
     })
 })
 
-// Bootstrap and popover - this allows english numbers to show over the Lithuanian.
 
 
 
-//below are the audio controls for the game, i have also had to adjust some of the volume and loop the countdown timer
+// see webdevsimplified as their documentation helped
+
 class AudioController {
+    //below are the audio controls for the game, i have also had to adjust some of the volume and loop the countdown timer
     constructor() {
         this.countdownSound = new Audio('assets/audio/countdown.mp3');
         this.turnSound = new Audio('assets/audio/turn.mp3');
@@ -31,8 +33,9 @@ class AudioController {
         this.countdownSound.play();
     }
     stopMusic() {
+        // can not stop audio so pause and put back to start instead
         this.countdownSound.pause();
-        this.countdownSound.currentTime = 0; // can not stop audio so pause and put back to start instead
+        this.countdownSound.currentTime = 0; 
     }
     turn() {
         this.turnSound.play();
@@ -43,34 +46,43 @@ class AudioController {
         // play language sound in future release
     }
     winner() {
-        this.stopMusic(); // when player wins we need to stop countdown
+        this.stopMusic(); 
+        // when player wins we need to stop countdown
         this.winnerSound.play();
     }
     gameOver() {
-        this.stopMusic(); // when player wins we need to stop countdown
+        this.stopMusic(); 
+        // when player wins we need to stop countdown
         this.gameOverSound.play();
     }
 }
 
-class Atmintis { // game function control - total time and cards 
+class Atmintis { 
+    // game function control - total time and cards 
     constructor(totalTime, cards) {
         this.cardsArray = cards;
-        this.totalTime = totalTime; // set at the constructor level - the rest below are dynamic
+        this.totalTime = totalTime; 
+        // set at the constructor level - the rest below are dynamic
         this.timeRemaining = totalTime;
-        this.timer = document.getElementById('time-left') // this pulls the clas for countdown timer
-        this.noTurn = document.getElementById('turns'); // this pulls the turn class
+        // this pulls the clas for countdown timer
+        this.timer = document.getElementById('time-left'); 
+        // this pulls the turn class
+        this.noTurn = document.getElementById('turns'); 
         this.audioController = new AudioController();
     }
 
-    startGame() {  // set in ready function properties for how start game works
+    startGame() {  
+        // set in ready function properties for how start game works
         this.cardToCheck = null; // 
         this.totalTurns = 0;
         this.timeRemaining = this.totalTime;
-        this.matchedCards = []; //used to check totalcards for victory
+        //used to check totalcards for victory
+        this.matchedCards = [];
         this.busy = true;
         this.audioController.stopMusic();
 
-        setTimeout(() => { // this will help the game run smoother when you hit game over or winner
+        setTimeout(() => { 
+            // this will help the game run smoother when you hit game over or winner
             this.audioController.startMusic();
             this.shufflePack();
             this.countdown = this.startTimer();
@@ -82,19 +94,24 @@ class Atmintis { // game function control - total time and cards
     }
     doNotShowCards() {
         this.cardsArray.forEach(card => {
+            //looking at cards array and remove show class
             card.classList.remove('show');
-        }); //looking at cards array and remove show class
+        }); 
 
     }
 
     turnCard(card) {
-        if (this.canTurnCard(card)) { // check rule can turn card
+        // check rule can turn card
+        if (this.canTurnCard(card)) { 
             this.audioController.turn();
-            this.totalTurns++; //click on one and add 1 turn
-            this.noTurn.innerText = this.totalTurns; //update the turn count
-            card.classList.add("show"); //use show class to turn
+            //click on one and add 1 turn
+            this.totalTurns++; 
+            //update the turn count
+            this.noTurn.innerText = this.totalTurns; 
+            //use show class to turn
+            card.classList.add("show"); 
             // Looking at a match or turning a card for the first time
-            if (this.cardToCheck) // check for match and check card
+            if (this.cardToCheck) 
                 this.checkMatch(card);
             else
                 this.cardToCheck = card;
@@ -107,11 +124,12 @@ class Atmintis { // game function control - total time and cards
             this.cardPair(card, this.cardToCheck);
         else
             this.cardNotMatch(card, this.cardToCheck);
-
-        this.cardToCheck = null; //card match or miss match the card has to be null
+//card match or miss match the card has to be null
+        this.cardToCheck = null; 
     }
 
-    cardPair(card1, card2) { // when we match cards push both cards to the matched and  cards array
+    cardPair(card1, card2) { 
+        // when we match cards push both cards to the matched and  cards array
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
         this.audioController.match();
@@ -120,7 +138,8 @@ class Atmintis { // game function control - total time and cards
 
     }
 
-    cardNotMatch(card1, card2) { // first delay so you get to see the card long enough then remove when not matched
+    cardNotMatch(card1, card2) { 
+        // first delay so you get to see the card long enough then remove when not matched
         this.busy = true;
         setTimeout(() => {
             card1.classList.remove("show");
@@ -130,12 +149,14 @@ class Atmintis { // game function control - total time and cards
 
     }
 
-    getCardValue(card) { // using the value class (0) and the image source for match only two are identical
+    getCardValue(card) { 
+        // using the value class (0) and the image source for match only two are identical
         return card.getElementsByClassName("value")[0].src;
 
     }
 
-    startTimer() { // works like set time out function take the time and minus 1 second, pass the info to the text value, 0 = gameover
+    startTimer() { 
+        // works like set time out function take the time and minus 1 second, pass the info to the text value, 0 = gameover
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
@@ -145,20 +166,21 @@ class Atmintis { // game function control - total time and cards
     }
 
     gameOver() {
-        clearInterval(this.countdown); //stop countdown, reset and bring message up 
+         //stop countdown, reset and bring message up 
+        clearInterval(this.countdown); 
         this.audioController.gameOver();
         document.getElementById("gomessage").classList.add("show");
 
     }
     winner() {
-        clearInterval(this.countdown); // stop countdouwn, bring up winner text hide cards
+        // stop countdouwn, bring up winner text hide cards
+        clearInterval(this.countdown); 
         this.audioController.winner();
         document.getElementById("winnermessage").classList.add("show");
         this.doNotShowCards();
 
     }
     // Fisher & Yates formula, see credits for website
-
     shufflePack() {
         for (let i = this.cardsArray.length - 1; i > 0; i--) {
             let randomIndex = Math.floor(Math.random() * (i + 1));
@@ -168,7 +190,8 @@ class Atmintis { // game function control - total time and cards
     }
 
 
-    canTurnCard(card) { //you cant click on the card untill the below is all false to be true (boolean)
+    canTurnCard(card) { 
+        //you cant click on the card untill the below is all false to be true (boolean)
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
@@ -188,7 +211,8 @@ function ready() {
 
         });
     });
-    cards.forEach(card => { // for ech card add eventlistener to flip card on click
+    // for ech card add eventlistener to flip card on click
+    cards.forEach(card => { 
         card.addEventListener('click', () => {
             game.turnCard(card);
         });
@@ -196,13 +220,12 @@ function ready() {
 }
 
 
-// loading process
+// if loading wait until it loads and call ready
 if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready); // if loading wait until it loads and call ready
+    document.addEventListener('DOMContentLoaded', ready); 
 } else {
     ready();
 }
 
 
 
-// see webdevsimplified as their documentation helped
