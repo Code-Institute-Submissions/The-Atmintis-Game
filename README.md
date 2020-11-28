@@ -2,12 +2,12 @@
 - - - - 
 [View the live project here](https://leefarmer83.github.io/The-Atmintis-Game/)
 
-This is a website designed to teach children between the ages of 3 - 5 years of age how to count to ten in Lithuanian or English on a desktop computer. 
+This is a website designed to teach children between 3 - 5 years of age how to count to ten in Lithuanian or English on a desktop computer. 
 
-The game features cards on a board that users need to match the English number to the correct, corresponding Lithuanian number. There is a timer and a turn count, this can be used to see how the end user is improving, the aim here is to have highest number of seconds with the least number of turns.
+The game features cards on a board that users need to match the English number to the correct, corresponding Lithuanian number. There is a timer and a turn count, this can be used to see how the end user is improving; the aim here is to have the highest number of seconds with the least number of turns taken.
 
 ## Game Rules
-The Atmintis Game is a single player game. The player has to look at the buttons at the top of the screen, and learn the numbers that are not in their home language. The aim of the game is to learn through matching the cards on the game board. Once players have reviewed the numbers at the top of the screen, they start the game by turning a card to see the number on the back. Depending on the card turned, the number will be in either Lithuanian or English. Players then need to turn other cards, and find the match with their selected, corresponding card. Once the game has started, the timer countdown, and the turn indicator lets the player know how many cards they have turned over in their search for the corresponding number of a selected card. The timer, and the turn counter can be used to measure how quickly the player is learning. The less time and turns taken, the quicker the player has memorised and learnt the numbers. These functions also foster a fun, competitive element against parents, siblings or other players.
+The Atmintis Game is a single player game. The player has to look at the buttons at the top of the screen, and learn the numbers that are not in their home language. The aim of the game is to learn through matching the cards on the game board. Once players have reviewed the numbers at the top of the screen, they start the game by turning a card to see the number on the back. Depending on the card turned, the number will be in either Lithuanian or English. Players then need to turn other cards, and find the match with their selected, corresponding card. Once the game has started, the timer countdown, and the turn counter lets the player know how many cards they have turned over in their search for the corresponding number of a selected card. The timer, and the turn counter can be used to measure how quickly the player is learning. The less time and turns taken, the quicker the player has memorised and learnt the numbers. These functions also foster a fun, competitive element against parents, siblings or other players.
 
 
 # Website Objective Summary
@@ -22,7 +22,7 @@ The Atmintis Game is a single player game. The player has to look at the buttons
 * Game Over sound to make the game fun for children.
 * Successful match sound to make the game fun for children.
 * The website must be children friendly as well as accessible.
-* Contact Developer option should Parents want more games or Languages.
+* Contact Developer option should parents want more games or languages.
 * Game must have a start and end trigger for good user experience.
 * Memory and learning go hand in hand, this website will use both skills to help teach the user count to ten in another language.
 
@@ -32,7 +32,7 @@ The Atmintis Game is a single player game. The player has to look at the buttons
 
 The game is for children (and their parents) who would like to learn to count in Lithuanian or English. The easy to use interface features timers, graphics and sounds that make learning fun, encouraging repetition which will aid retention of the concepts. 
 
-The game is designed to be played on a desktop computer or laptop, not mobile devices. The screen is responsive (mobile first) but the user experience is important, seeing all cards needs a larger screen.
+The game is designed to be played on a desktop computer or laptop, not mobile devices. The screen is responsive (mobile first) but the user experience is important, and seeing all cards needs a larger screen.
 
 
 *Who are the users - in order*
@@ -55,9 +55,10 @@ A fun way to teach their children and themselves another language, as well as tr
 
 * Parent -  I am English and my wife is Lithuanian, we need a platform to teach our child how to count to ten in both languages<br>
 * Parent -  It is hard to get my child to concentrate and learn Lithuanian, I need a platform that is fun while learning<br>
-* Parent -  I would like a platform that gives some type of bench marker for improvement<br>
+* Parent -  I would like a platform that gives some type of bench mark for improvement<br>
 * Child - I want to learn Lithuanian as my mum comes from Lithuania<br>
 * Child - I want to learn Lithuanian using a fun platform where I can see improvements<br>
+* Parent - I want a platform that helps my children pronounce Lithuanian<br>
 * Parent - I would like other learning subjects not just counting to ten.
 
 
@@ -65,10 +66,10 @@ A fun way to teach their children and themselves another language, as well as tr
 # Wireframes
 [The Atmintis Game](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20The%20Game.jpeg)<br>
 [Click to start](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20Click%20to%20start.jpeg)<br>
-[winner message](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20Winner%20message.jpeg)<br>
+[Winner message](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20Winner%20message.jpeg)<br>
 [Game Over message](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20Game%20Over.jpeg)<br>
-[mobile view (not for mobile)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20mobile%20but%20screen%20will%20be%20responsive..jpeg)<br>
-[tablet view (not for tablet)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20ipad%20but%20screen%20will%20be%20responsive.%20.jpeg)<br>
+[Mobile view (not for mobile)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20mobile%20but%20screen%20will%20be%20responsive..jpeg)<br>
+[Tablet view (not for tablet)](https://github.com/Leefarmer83/The-Atmintis-Game/blob/master/assets/wire-frames/Atmintis%20-%20not%20for%20ipad%20but%20screen%20will%20be%20responsive.%20.jpeg)<br>
 
 The wireframes helpped me realise that thegame really needs a laptop or comoputer screen for the best user experience. I still mapped out what the mobile and tablet version may lok like and coded with mobile first in mind.
 However, this game is meant to be played on a screen or laptop. 
@@ -78,7 +79,7 @@ However, this game is meant to be played on a screen or laptop.
 ### Colour and font
 Colour and font were taken into account in order to make the interface eye catching for children, but also incorporated best practices in terms of accessibility, in order to cater for users of all learning abilities. 
 ### Images
-I designed all the images myself using a free image website: https://www.shutterstock.com/, I then copied and designed these on a word doc, converting to PNG files. I would in future source this out or take a design course. 
+I designed all the images myself using a free image website: https://www.shutterstock.com/, I then copied and designed these in a Word doc, converting to PNG files. I would in future source this out or take a design course. 
 The images had to be friendly and fun.
 ### Sound
 I downloaded my sounds from: https://www.zapsplat.com/. I selected the sound for children, helping the game to be fun and happy.
@@ -86,20 +87,22 @@ I downloaded my sounds from: https://www.zapsplat.com/. I selected the sound for
 
 ## Learn Section
 
-This sections has Lithuanian numbers 1 t 10 on buttons, when you hover over the button you will see the English version of this number.
+This section has Lithuanian numbers 1 to 10 on buttons, and when you hover over the button you will see the English version of this number. You can also click on the lituanian number and hear how to pronounce the number.
 
 **Related user story addressed:**
 
 * Parent - I am English and my wife is Lithuanian, we need a platform to teach our child how to count to ten in both languages.
 * Child - I want to learn Lithuanian as my mum comes from Lithuania.
+* Parent - I want a platform that helps my children pronounce Lithuanian<br>
+
 
 ### Click to Start
 
-Once the user feels confident, they can start the game by clicking on the box "click to start" This will then start a funny countdown along with a timer and turn count.
+Once the user feels confident, they can start the game by clicking on the box "Click to Start" This will then start a funny countdown along with a timer and turn count.
 
 ### Timer - Count Down 
 
-I have included a countdown for the end user so they can quantify their learning, they have 110 seconds to match all the English numbers with their corresponding Lithuanian number. This feature allows the end user to see how long it took and also encourage them to come back and beat the time they set. If the time reaches 0 seconds, a game over message will appear along with a message "click to start again".
+I have included a countdown for the end user so they can quantify their learning, they have 110 seconds to match all the English numbers with their corresponding Lithuanian number. This feature allows the end user to see how long it took and also encourage them to come back and beat the time they set. If the time reaches 0 seconds, a Game Over message will appear along with a message "click to start again".
 
 **Related user story addressed:**
 
@@ -120,9 +123,9 @@ I have also included a turn counter, like the timer but instead increasing as th
 
 ### Gameboard
 
-The gameboard has 20 cards. Ten times 2 sets, with 1 to 10 for each language (English and Lithuanian). When the game starts the cards are facedown and shuffled. 
+The gameboard has 20 cards. Ten times 2 sets, with 1 to 10 for each language (English and Lithuanian). When the game starts the cards are face down and shuffled. 
 
-The user clicks on a card, this will turn the card over and the image will shake while you are hovering, turning the card is accompanied with a turning sound, the user then has select another card, the goal here is to find the opposite language number. If the cards match the cards stay put and the user will get a matched sound. If the cards do not match they turn back over for the user to start searching again.
+The user clicks on a card, this will turn the card over and the image will shake while you are hovering. Turning the card is accompanied with a turning sound, the user then has to select another card, the goal here is to find the opposite language number. If the cards match the cards stay put and the user will get a matched sound. If the cards do not match they turn back over for the user to start searching again.
 
 Every click will increase the turn counter, while the clock is ticking down. If the user completes the game by matching all the cards on the board before the time runs out, they are presented with a winner message and the option to click and try again.
 
@@ -146,12 +149,11 @@ On this page you have a section for any parent that wishes to expand the game or
 
 ### Features Left to Implement
 
-* Counting is the first of this game’s features. Further features to implement include learning letters of the alphabet, colours, animals and languages. 
-* The learning section will be a single  page with picture and animations against the numbers, once the user is ready then will then be passed to 'The Antmintis Game'
-* I have uploaded single number images to the game that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunately the images are poor and I would rather have a designer develop them. For now I used the images class and the source as the identifier for the match.
-* I want to add a click function to the numbers under the learn section. On Click you will have a voice speaking the number in Lithuanian, this will help the end user pronounce the words correctly.
-* pop up message that states email has been sent on the developer contact page.
-* To look at away to make the game mobile friendly, intended use is desktop only due to the need of a large screen.
+* Counting is the first of this game’s features. Further features to implement include learning letters of the alphabet, colours, animals and other languages. 
+* The learning section will be a single  page with pictures and animations against the numbers, once the user is ready they will then be passed to 'The Antmintis Game'
+* I have uploaded single number images to the game that are currently hidden, the plan here is to have them grow and dance once the user hits a match, unfortunately the images are poor and I would rather have a designer develop them. For now I used the images class and the source as the identifier for the match.* I want to add a click function to the numbers under the learn section. On Click you will have a voice speaking the number in Lithuanian, this will help the end user pronounce the words correctly.
+* Pop up message that states email has been sent on the developer contact page.
+* To look at away to make the game mobile friendly, intended use is desktop only due to the need for a large screen.
 
 - - - -
 
@@ -190,12 +192,13 @@ I also used Bootstrap's core CSS for some of the styling and layout, buttons, fo
 
 ## Testing
 
+on the consol llog in the dev tools i get a /favicon.ico:1 Failed to load resource: the server responded with a status of 404 (), i dont have an icon and i am told this error is not that important.
+
 I have given the URL out to my partners family, they speak Lithuanian and have children between 3-7, they have all tested the game and love it. no bugs or issues reported. in total 12 people have now played the game.
  
 Used [HTML Validator](https://validator.w3.org/) to check the markup on each page. All pages have the following message: Document checking completed. No errors or warnings to show.
 
 Acceptable errors:
-1- Error: Bad value data:image/x-icon; for attribute href on element link: Premature end of URI. - this removes the error on console as it is looking for favicon, but the game doesn't have one.  
 20 -  Error  An img element must have an alt attribute, except under certain conditions. - the images are hidden and i am using the class and scr to match cards, wont need the message as the image will never show.
 
 
@@ -205,9 +208,13 @@ Congratulations! No Error Found.
 
 Used [Javascript Validator] (https://esprima.org/demo/validate.html)
 Code is syntactically valid.
+
+### Lannguage audio
+ 1. Clicked on every number buton.
+ 2. The correct Lituanian number sound matches each number button.
  
 #### Click to Start Functionality
- 1. When opening a new browser, check to see if Click to Start  message appears. Message only disappears when the user clicks over the transparent layer area. This is important because the user may click around the vocabulary learning objects, and we don’t want to start the game at this point. 
+ 1. When opening a new browser, check to see if the Click to Start  message appears. Message only disappears when the user clicks over the transparent layer area. This is important because the user may click around the vocabulary learning objects, and we don’t want to start the game at this point. 
  2. Clicking within the transparent layer area should start the game, and the Click to Start message and transparent layer disappear (see timer test). 
  3. Click to Start message size also increases when a user opens a new browser as planned. 
  4. Changes made - animation of Click to Start message increased time to 1.5 seconds for clearer visibility. 
@@ -217,7 +224,7 @@ Code is syntactically valid.
  2. Changes made - pop-over font does not match game board font, to reinforce the difference in the numbers. 
  
 #### Turns Function
- 1. Enable game by clicking Click to Start function. Click on every card to ensure the turn number starts from zero and increases on every turn of a card. Card selection works as intended. 
+ 1. Enable the game by clicking the Click to Start function. Click on every card to ensure the turn number starts from zero and increases on every turn of a card. Card selection works as intended. 
  2. By continuously clicking on one card, the turn does not increase. This is important should the user accidentally click on the card twice. 
  3. Once the game becomes idle from the Game Over or Winner message, the Turns counter freezes, showing the user how many turns they have taken. 
  
@@ -238,7 +245,7 @@ Code is syntactically valid.
   6. When a card is flipped, it remains static until the second card is selected. 
   7. Paired cards - once cards are paired, they remain face up. 
   8. Once all the cards are turned and matched correctly, the winner message will pop up. 
-  9. Clicked on first card multiple times after resetting, to make sure cards are shuffled.
+  9. Clicked on the first card multiple times after resetting, to make sure cards are shuffled.
 
 Functionality has been tested on every card on the game board. 
  
@@ -278,12 +285,12 @@ Websites the project website links out to.
 
 ## Deployment
 
-I published my website via GitHub, the below steps is how I did it:
+I published my website via GitHub, the below steps are how I did it:
 
 1. Navigate to my Githubrepository: https://github.com/Leefarmer83/The-Atmintis-Game
 2. Click on settings
-3. Under GitHub pages i clicked master branch 
-4. I choose root as my folder
+3. Under GitHub pages I clicked master branch 
+4. I chose root as my folder
 5. Clicked saved
 6. Here is the url: https://leefarmer83.github.io/The-Atmintis-Game/
 

@@ -1,3 +1,45 @@
+// helps user pronounce the word on click
+function one() {
+          var one = document.getElementById("one");
+          one.play(); 
+      }
+function two() {
+          var two = document.getElementById("two");
+          two.play();
+      }
+function three() {
+          var three = document.getElementById("three");
+          three.play();
+      }
+function four() {
+          var four = document.getElementById("four");
+          four.play();
+      }
+function five() {
+          var five = document.getElementById("five");
+          five.play();
+      }
+function six() {
+          var six = document.getElementById("six");
+          six.play();
+      }
+function seven() {
+          var seven = document.getElementById("seven");
+          seven.play();
+      }
+function eight() {
+          var eight = document.getElementById("eight");
+          eight.play();
+      }
+function nine() {
+          var nine = document.getElementById("nine");
+          nine.play();
+      }
+function ten() {
+          var ten = document.getElementById("ten");
+          ten.play();
+      }
+
 $(function() {
     // Bootstrap and popover - this allows english numbers to show over the Lithuanian.
     $('[data-toggle="popover"]').popover({
@@ -5,8 +47,6 @@ $(function() {
         trigger: 'hover'
     })
 })
-
-
 
 
 // see webdevsimplified as their documentation helped
