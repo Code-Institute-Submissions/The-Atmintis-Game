@@ -24,6 +24,10 @@ class AudioController {
         this.winnerSound.volume = 0.5;
     }
     startMusic() {
+        this.gameOverSound.pause();
+        this.gameOverSound.currentTime = 0
+        this.winnerSound.pause();
+        this.winnerSound.currentTime = 0
         this.countdownSound.play();
     }
     stopMusic() {
@@ -64,6 +68,7 @@ class Atmintis { // game function control - total time and cards
         this.timeRemaining = this.totalTime;
         this.matchedCards = []; //used to check totalcards for victory
         this.busy = true;
+        this.audioController.stopMusic();
 
         setTimeout(() => { // this will help the game run smoother when you hit game over or winner
             this.audioController.startMusic();
